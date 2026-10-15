@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var t=null;try{t=localStorage.getItem("plan-unimayor:tema")}catch(e){}if(!t){t="light"}document.documentElement.setAttribute("data-theme",t)})();</script>
+<title>Plan de Transferencia · Universidad Colegio Mayor de Cundinamarca</title>
+<meta name="description" content="Plan de maduración, equipo, hoja de ruta, lienzo de transferencia y pitch de un resultado de investigación de la Universidad Colegio Mayor de Cundinamarca.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Identidad institucional (Universidad Colegio Mayor de Cundinamarca): azul #3366CC / #004EC4, amarillo #FFCE21 ── */
+:root{
+  --bg:#ffffff; --bg2:#f3f6fc; --card:#ffffff; --card2:#eef2fa; --line:rgba(0,40,120,.16); --soft:rgba(0,40,120,.08);
+  --ink:#0a1c46; --dim:#37476f; --faint:#5b6a94;
+  --accent:#004EC4; --accent-ink:#ffffff; --accent-soft:rgba(0,78,196,.08); --accent-glow:rgba(0,78,196,.30);
+  --hi:#FFCE21; --head:#3366CC; --head-ink:#ffffff;
+  --ok:#0f8f66; --ok-bg:rgba(15,143,102,.14); --warn:#7a5200; --warn-bg:rgba(255,206,33,.28); --danger:#b3261e;
+  --glow1:rgba(0,78,196,.10); --glow2:rgba(255,206,33,.12);
+  --b1:rgba(0,78,196,.07); --b2:rgba(255,206,33,.16); --b3:rgba(15,143,102,.09);
+  --d0:#004EC4; --d1:#c98a00; --d2:#7a3fc4; --d3:#0f8f66; --d4:#d4572a; --d5:#0a8aa8;
+  --r-s:10px; --r-m:18px; --r-l:28px; --maxw:1180px;
+  --display:'Outfit',system-ui,sans-serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+:root[data-theme=dark]{
+  --bg:#050e26; --bg2:#0a1636; --card:#0d1b42; --card2:#142655; --line:rgba(255,255,255,.14); --soft:rgba(255,255,255,.08);
+  --ink:#f3f6ff; --dim:#bcc8ea; --faint:#8d9cc6;
+  --accent:#FFCE21; --accent-ink:#1a1400; --accent-soft:rgba(255,206,33,.12); --accent-glow:rgba(255,206,33,.35);
+  --hi:#FFCE21; --head:#16357d; --head-ink:#ffffff;
+  --ok:#3ddc97; --ok-bg:rgba(61,220,151,.15); --warn:#FFCE21; --warn-bg:rgba(255,206,33,.14); --danger:#ff8a80;
+  --glow1:rgba(97,147,218,.18); --glow2:rgba(255,206,33,.06);
+  --b1:rgba(111,155,255,.10); --b2:rgba(255,206,33,.09); --b3:rgba(61,220,151,.09);
+  --d0:#6f9bff; --d1:#FFCE21; --d2:#b78aff; --d3:#3ddc97; --d4:#ff9a6b; --d5:#4fd6f0;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(900px 500px at 85% -10%,var(--glow1),transparent 60%),radial-gradient(700px 500px at -10% 30%,var(--glow2),transparent 60%)}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,5vw,3.3rem);font-weight:800}
+h2{font-size:clamp(1.45rem,3vw,2.1rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0 0 1em;color:var(--dim)}
+a{color:var(--accent)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.muted{color:var(--faint);font-size:.9em}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font:600 .78rem var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--head);color:var(--head-ink);border-bottom:3px solid var(--hi)}
+.top .wrap{display:flex;align-items:center;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.1rem var(--display);color:var(--head-ink);cursor:pointer;background:none;border:0;padding:0;text-align:left}
+.brand small{display:block;font:500 .68rem var(--body);color:rgba(255,255,255,.78);letter-spacing:.04em}
+.top nav{margin-left:auto;display:flex;gap:6px}
+.top nav button{background:none;border:0;color:rgba(255,255,255,.88);font:500 .92rem var(--body);padding:8px 12px;border-radius:999px;cursor:pointer}
+.top nav button:hover,.top nav button.on{color:#fff;background:rgba(255,255,255,.2)}
+.top nav .theme{border:1px solid rgba(255,255,255,.45);margin-left:6px}
+.top :focus-visible{outline-color:var(--hi)}
+.gbar{height:4px;background:rgba(255,255,255,.18)}
+.gbar i{display:block;height:100%;width:0;background:var(--hi);transition:width .5s}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 .96rem var(--display);padding:12px 20px;border-radius:12px;border:1px solid var(--line);background:var(--card2);color:var(--ink);cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .2s,filter .2s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:transparent;box-shadow:0 8px 30px -8px var(--accent-glow)}
+.btn.small{padding:7px 12px;font-size:.84rem;border-radius:10px}
+.btn.ghost{background:transparent}
+.btn.danger{color:var(--danger)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 10px}
+
+/* home */
+.hero{padding:64px 0 36px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:1.12rem;max-width:56ch}
+.hero-viz{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--r-l);padding:18px;box-shadow:0 30px 80px -30px rgba(0,30,90,.35)}
+.section{padding:52px 0}
+.section.alt{background:linear-gradient(180deg,transparent,var(--bg2),transparent)}
+.center{text-align:center}.center p{max-width:64ch;margin-inline:auto}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:20px}
+.step-n{font:800 2rem var(--display);color:var(--accent);line-height:1;margin-bottom:8px}
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px 20px;margin-bottom:10px}
+details.faq summary{cursor:pointer;font:600 1rem var(--display)}
+details.faq p{margin:10px 0 0}
+footer.foot{border-top:1px solid var(--line);padding:30px 0 60px;color:var(--faint);font-size:.85rem}
+
+/* ruta strip */
+.etapas{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;position:relative}
+.etapa{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:16px 14px;position:relative}
+.etapa .n{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--soft);font:700 .9rem var(--display);margin-bottom:10px}
+.etapa h3{font-size:.98rem}
+.etapa small{display:block;color:var(--faint);font-size:.78rem;line-height:1.4}
+.etapa.here{border:2px solid var(--accent);background:var(--accent-soft)}
+.etapa.here .n{background:var(--accent);color:var(--accent-ink)}
+.etapa .tag{display:inline-block;font:700 .66rem var(--display);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-top:8px;background:var(--soft);color:var(--dim)}
+.etapa.here .tag{background:var(--hi);color:#1a1400}
+
+/* app shell */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px 0 6px}
+.toolbar .sp{flex:1}
+.saved{font-size:.85rem;color:var(--faint)}
+.steps{display:flex;gap:8px;overflow-x:auto;padding:10px 0 14px;scrollbar-width:thin}
+.pill{flex:none;display:flex;align-items:center;gap:9px;padding:8px 14px 8px 8px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--dim);font:600 .88rem var(--display);cursor:pointer}
+.pill .ring{--p:0;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.72rem;color:var(--ink);
+  background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--soft) 0)}
+.pill .ring b{display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:var(--card);font-weight:700}
+.pill.on{border-color:var(--accent);color:var(--ink);background:var(--accent-soft)}
+.pill.done .ring b{background:var(--ok);color:#fff}
+.stage{padding:10px 0 110px}
+.stage h2{margin-bottom:.25em}
+.stage .sub{max-width:70ch}
+.nav2{display:flex;justify-content:space-between;gap:12px;margin-top:34px;flex-wrap:wrap}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+.cols.r{grid-template-columns:minmax(320px,.9fr) minmax(0,1.1fr)}
+.sticky{position:sticky;top:90px}
+
+/* fields */
+label.f{display:block;margin-bottom:14px}
+.f .l{display:block;font:600 .92rem var(--display);margin-bottom:5px}
+.f .hint{display:block;font-size:.82rem;color:var(--faint);margin-top:4px}
+input[type=text],input[type=number],textarea,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+textarea{min-height:92px;resize:vertical;line-height:1.5;field-sizing:content;max-height:420px}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+.explain{border-left:4px solid var(--hi);background:var(--card2);border-radius:0 12px 12px 0;padding:12px 16px;margin:14px 0 20px;font-size:.93rem;color:var(--dim)}
+.explain b{color:var(--ink)}
+.notice{border:1px solid var(--line);background:var(--warn-bg);border-radius:12px;padding:11px 14px;font-size:.88rem;color:var(--ink);margin:12px 0}
+.chip{display:inline-flex;align-items:center;gap:6px;font:600 .74rem var(--display);padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--dim)}
+.chip.ok{background:var(--ok-bg);color:var(--ok)}
+.chip.warn{background:var(--warn-bg);color:var(--warn)}
+
+/* radar + levels */
+.radar-box{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px}
+.radar-box svg{width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;font-size:.84rem;color:var(--dim);margin-top:4px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid var(--accent);vertical-align:middle;margin-right:6px}
+.legend i.g{border-top:3px dashed var(--hi)}
+.lvrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.lvrow:first-of-type{border-top:0}
+.lvrow .nm b{font:700 .95rem var(--display);display:block}
+.lvrow .nm small{color:var(--faint);font-size:.76rem;line-height:1.3;display:block}
+.lvrow .ctl{display:flex;flex-direction:column;gap:2px;font-size:.78rem;color:var(--faint)}
+.lvrow .ctl output{font:700 1rem var(--display);color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.lvhead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr);gap:12px;font:600 .7rem var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding-bottom:6px}
+.gap-card{border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:10px;overflow:hidden}
+.gap-card summary{cursor:pointer;display:flex;gap:10px;align-items:center;padding:12px 14px;font:600 .95rem var(--display);list-style:none}
+.gap-card summary::-webkit-details-marker{display:none}
+.gap-card summary .dot{width:12px;height:12px;border-radius:50%;flex:none}
+.gap-card summary .arrow{margin-left:auto;font-size:.8rem;color:var(--faint);font-weight:500}
+.gap-body{padding:4px 14px 14px;border-top:1px solid var(--line)}
+.crit{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px dashed var(--line);font-size:.9rem;color:var(--dim)}
+.crit:first-child{border-top:0}
+.crit .mk{flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:.72rem;background:var(--soft)}
+.crit.si .mk{background:var(--ok);color:#fff}
+.crit .t{flex:1}
+.crit.si .t{text-decoration:line-through;opacity:.7}
+
+/* value panel */
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.seg button{background:none;border:0;padding:9px 14px;font:600 .88rem var(--display);color:var(--dim);cursor:pointer}
+.seg button.on{background:var(--accent);color:var(--accent-ink)}
+.range-bar{position:relative;height:46px;margin:14px 6px 6px;background:var(--soft);border-radius:12px}
+.range-bar .fill{position:absolute;top:0;bottom:0;background:var(--accent-soft);border:2px solid var(--accent);border-radius:12px}
+.range-bar .ref{position:absolute;top:-6px;bottom:-6px;width:4px;background:var(--hi);border-radius:3px}
+.range-bar .fl{position:absolute;top:0;bottom:0;width:3px;background:var(--ok)}
+
+/* equipo canvas */
+.note-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.note{background:var(--b1);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column}
+.note.w2{grid-column:span 2}
+.note h3{font-size:.98rem;margin-bottom:2px}
+.note .g{font-size:.8rem;color:var(--faint);margin:0 0 8px}
+.note textarea{background:transparent;border-color:transparent;min-height:84px;padding:8px}
+.note textarea:hover,.note textarea:focus{background:var(--bg);border-color:var(--line)}
+.member{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-bottom:8px}
+.member input{padding:8px 10px}
+
+/* roadmap board */
+.board{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);gap:12px;overflow-x:auto;padding-bottom:12px;scrollbar-width:thin}
+.col{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:10px;min-height:220px;display:flex;flex-direction:column;gap:8px;transition:background .2s,border-color .2s}
+.col.over{border-color:var(--accent);background:var(--accent-soft)}
+.col h3{display:flex;justify-content:space-between;align-items:center;font-size:.95rem;margin:2px 4px}
+.col h3 small{font:500 .74rem var(--body);color:var(--faint)}
+.task{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--dc,var(--accent));border-radius:12px;padding:10px 12px;cursor:grab;font-size:.88rem;color:var(--ink)}
+.task.drag{opacity:.4}
+.task .top2{display:flex;gap:8px;justify-content:space-between;align-items:flex-start}
+.task .at{font-weight:500;flex:1;cursor:pointer}
+.task .meta{font-size:.74rem;color:var(--faint);margin-top:4px}
+.task .more{margin-top:10px;display:grid;gap:8px}
+.task .more input,.task .more textarea{padding:7px 9px;font-size:.84rem;min-height:0}
+.task .mv{display:flex;gap:6px;margin-top:8px}
+.addc{margin-top:auto;border:1px dashed var(--line);background:transparent;border-radius:10px;padding:8px;color:var(--faint);cursor:pointer;font:600 .84rem var(--display)}
+.addc:hover{border-color:var(--accent);color:var(--accent)}
+.x{background:none;border:0;color:var(--faint);cursor:pointer;font-size:1rem;line-height:1;padding:2px 6px;border-radius:8px}
+.x:hover{color:var(--danger);background:var(--soft)}
+
+/* lienzo */
+.blk{margin-bottom:26px}
+.blk>h3{display:flex;align-items:center;gap:12px;font-size:1.15rem}
+.blk .meter{flex:1;height:8px;border-radius:8px;background:var(--soft);overflow:hidden;max-width:260px}
+.blk .meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .4s}
+.cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cell{border:1px solid var(--line);border-radius:16px;padding:12px;background:var(--bgb,var(--b1));display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s}
+.cell:focus-within{border-color:var(--accent);box-shadow:0 10px 30px -14px var(--accent-glow)}
+.cell h4{margin:0;font:700 .98rem var(--display);display:flex;justify-content:space-between;gap:6px;align-items:center}
+.cell .qs{font-size:.78rem;color:var(--faint);margin:4px 0 8px;line-height:1.4}
+.cell textarea{background:transparent;border-color:var(--line);min-height:110px}
+.cell .sg{align-self:flex-start;margin-top:8px}
+.cell.full .tick{color:var(--ok)}
+.tick{font-size:.9rem;opacity:.0}
+.cell.full .tick{opacity:1}
+
+/* pitch */
+.pitch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.pitch-grid .wide{grid-column:1/-1}
+.pf{border:1px solid var(--line);border-radius:16px;padding:14px;background:var(--card)}
+.pf .num{font:800 .72rem var(--display);letter-spacing:.1em;color:var(--accent)}
+.pf h3{font-size:1rem;margin:2px 0 2px}
+.pf .g{font-size:.8rem;color:var(--faint);margin:0 0 8px}
+.pf textarea{min-height:76px}
+#present{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#0b2a78,#004EC4 60%,#0b2a78);color:#fff;display:flex;flex-direction:column;padding:28px 6vw}
+#present .pbar{height:5px;background:rgba(255,255,255,.2);border-radius:5px;overflow:hidden}
+#present .pbar i{display:block;height:100%;background:var(--hi);transition:width .3s}
+#present .pbody{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:980px;margin:0 auto;width:100%}
+#present .k{font:700 .9rem var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--hi);margin-bottom:18px}
+#present .t{font:700 clamp(1.5rem,3.6vw,2.7rem)/1.25 var(--display);white-space:pre-wrap}
+#present .t.small{font-size:clamp(1.1rem,2.3vw,1.7rem);font-weight:500;line-height:1.5}
+#present .t.empty{opacity:.55;font-style:italic}
+#present .ptl{display:flex;justify-content:space-between;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.86rem}
+#present button{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:12px;padding:10px 16px;font:600 .92rem var(--display);cursor:pointer}
+#present button:hover{background:rgba(255,255,255,.28)}
+#present .pnav{display:flex;justify-content:space-between;gap:10px}
+
+/* sheet (ficha) */
+.sheet{background:#fff;color:#0a1c46;border:1px solid var(--line);border-radius:14px;padding:26px;font-size:.88rem;line-height:1.45}
+.sheet h1{font-size:1.5rem;color:#0a1c46}
+.sheet h2{font-size:1.02rem;border-bottom:2px solid #FFCE21;padding-bottom:3px;margin:18px 0 8px;color:#004EC4}
+.sheet p,.sheet li,.sheet td,.sheet th{color:#0a1c46}
+.sheet table{width:100%;border-collapse:collapse;font-size:.8rem}
+.sheet th,.sheet td{border:1px solid rgba(0,40,120,.25);padding:5px 7px;text-align:left;vertical-align:top}
+.sheet th{background:#eef2fa}
+.sheet .kv{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px}
+.sheet .kv b{color:#004EC4}
+.sheet .three{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.sheet .box{border:1px solid rgba(0,40,120,.25);border-radius:8px;padding:6px 8px;min-height:44px}
+.sheet .box b{display:block;font-size:.72rem;color:#004EC4;text-transform:uppercase;letter-spacing:.04em}
+.sheet .box span{white-space:pre-wrap}
+.sheet .fl{font-size:.74rem;color:#37476f;margin-top:14px}
+.sheet .rad{max-width:340px;margin:0 auto}
+.sheet svg text{fill:#0a1c46}
+#sheet{display:none}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:12px;font-size:.9rem;opacity:0;pointer-events:none;transition:.3s;z-index:120;max-width:90vw}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:900px){
+  .hero,.cols,.cols.r{grid-template-columns:1fr}
+  .g3,.g2,.etapas,.note-grid,.cells,.pitch-grid{grid-template-columns:1fr}
+  .note.w2{grid-column:auto}
+  .sticky{position:static}
+  .top nav .long{display:none}
+  .lvrow,.lvhead{grid-template-columns:1fr 1fr}
+  .lvrow .nm,.lvhead span:first-child{grid-column:1/-1}
+}
+@media (min-width:901px){.top nav .short{display:none}}
+@media (max-width:700px){
+  .top .wrap{gap:8px;padding:0 12px}
+  .brand{font-size:.98rem;white-space:nowrap}
+  .brand small{display:none}
+  .top nav{gap:2px}
+  .top nav button{padding:7px 9px;font-size:.84rem}
+  .top nav .theme{margin-left:2px}
+  #nav-home{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{
+  @page{size:A4;margin:12mm}
+  body{background:#fff}
+  body::before,.top,main,.toast,#present,footer{display:none!important}
+  #sheet{display:block!important}
+  #sheet .sheet{border:0;padding:0}
+  .sheet h2{break-after:avoid}
+  .sheet tr,.sheet .box{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <button class="brand" data-act="home" aria-label="Ir al inicio">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#004EC4" stroke="#FFCE21" stroke-width="1.5"/><g fill="none" stroke="#FFCE21" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24 L14 17 L19 20 L26 10"/><path d="M21 10 H26 V15"/></g></svg>
+      <span>Plan de Transferencia<small>Universidad Colegio Mayor de Cundinamarca</small></span>
+    </button>
+    <nav aria-label="Principal">
+      <button data-act="home" id="nav-home" class="on">Inicio</button>
+      <button data-act="ruta" id="nav-ruta"><span class="long">Ruta de transferencia</span><span class="short">Ruta</span></button>
+      <button data-act="start" id="nav-app">Mi plan</button>
+      <button data-act="theme" class="theme" id="nav-theme" aria-label="Cambiar entre modo claro y oscuro">☾ Oscuro</button>
+    </nav>
+  </div>
+  <div class="gbar" aria-hidden="true"><i id="gbar"></i></div>
+</header>
+
+<main>
+<!-- INICIO -->
+<section id="v-home" class="view">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Universidad Colegio Mayor de Cundinamarca · ATRI</span>
+        <h1>Convierte tu diagnóstico en un <em>plan para transferir</em></h1>
+        <p class="lead">Ya sabes en qué nivel está tu resultado. Ahora decide a dónde quieres llevarlo, con quién, en qué trimestres y cómo lo vas a contar. Seis pasos, con tus datos de la Ruta de Madurez ya cargados.</p>
+        <div class="cta-row">
+          <button class="btn primary" data-act="start">Empezar mi plan →</button>
+          <label class="btn">Continuar un avance guardado<input type="file" id="imp-own-home" accept=".json,application/json" hidden></label>
+        </div>
+        <p class="muted">Sin registro. Tu avance se guarda en este navegador y puedes descargarlo como archivo.</p>
+      </div>
+      <div class="hero-viz" aria-hidden="true">
+        <svg viewBox="0 0 420 300" width="100%" role="img" aria-label="Ilustración de la ruta: de hoy a la meta">
+          <defs><linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#6193DA"/><stop offset="1" stop-color="#FFCE21"/></linearGradient></defs>
+          <path d="M30 240 C110 240 120 150 200 160 S320 90 390 50" fill="none" stroke="url(#gr)" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 14"/>
+          <g font-family="Outfit,sans-serif" font-weight="700" font-size="13" text-anchor="middle">
+            <circle cx="36" cy="240" r="18" fill="#004EC4"/><text x="36" y="245" fill="#fff">Hoy</text>
+            <circle cx="142" cy="190" r="14" fill="#fff" stroke="#004EC4" stroke-width="3"/><text x="142" y="194" fill="#004EC4" font-size="11">T1</text>
+            <circle cx="220" cy="150" r="14" fill="#fff" stroke="#004EC4" stroke-width="3"/><text x="220" y="154" fill="#004EC4" font-size="11">T2</text>
+            <circle cx="300" cy="110" r="14" fill="#fff" stroke="#004EC4" stroke-width="3"/><text x="300" y="114" fill="#004EC4" font-size="11">T3</text>
+            <circle cx="384" cy="52" r="22" fill="#FFCE21"/><text x="384" y="57" fill="#1a1400">Meta</text>
+          </g>
+          <g fill="#6193DA" opacity=".35"><rect x="40" y="40" width="90" height="46" rx="10"/><rect x="60" y="94" width="70" height="30" rx="10"/></g>
+          <g font-family="Inter,sans-serif" font-size="11" fill="#0a1c46"><text x="52" y="68">Plan de maduración</text><text x="70" y="113">Equipo</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="section alt" id="ruta"><div class="wrap">
+    <div class="center"><span class="eyebrow">Ruta de transferencia</span><h2>Esta herramienta cubre las etapas 4 y 5</h2>
+    <p>El Modelo de Transferencia de Conocimiento e Innovación, adoptado por el Acuerdo 041 de 2026, tiene cinco etapas operativas. La Ruta de Madurez y la Ruta de Valor atienden la segunda. Aquí se construye lo que sigue.</p></div>
+    <div class="etapas" style="margin-top:26px" id="etapas"></div>
+  </div></div>
+
+  <div class="section"><div class="wrap">
+    <div class="center"><span class="eyebrow">Cómo funciona</span><h2>Seis pasos, en este orden</h2></div>
+    <div class="grid g3" style="margin-top:24px" id="how"></div>
+  </div></div>
+
+  <div class="section alt"><div class="wrap" style="max-width:820px">
+    <h2 class="center">Preguntas frecuentes</h2>
+    <details class="faq"><summary>¿Necesito haber hecho antes la Ruta de Madurez?</summary><p>Es lo recomendable: así tu plan hereda niveles y respuestas y te propone actividades. Si no la has hecho, puedes indicar tus niveles a mano en el paso 1 y seguir.</p></details>
+    <details class="faq"><summary>¿Es obligatorio tener la valoración económica?</summary><p>No. El Acuerdo 041 incluye la valoración dentro de la etapa 2, pero no la exige como condición para planear la maduración ni la estrategia de transferencia. Si ya la tienes, el plan la usa como referencia de negociación. Si no, el recorrido continúa y la ficha lo señala.</p></details>
+    <details class="faq"><summary>¿La valoración de esta herramienta es un avalúo?</summary><p>No. Es una estimación orientativa para gestión y negociación. La valoración formal la adelantan profesionales o entidades especializadas que coordina la Subdirección, según el Acuerdo.</p></details>
+    <details class="faq"><summary>¿Dónde quedan mis datos?</summary><p>Solo en tu navegador, en este equipo. Nada se envía a ningún servidor. Para entregar tu plan a ATRI, descarga el archivo o la ficha en PDF.</p></details>
+    <details class="faq"><summary>¿Puedo trabajar en varias sesiones?</summary><p>Sí. El avance se guarda solo. También puedes descargarlo como archivo y continuarlo en otro equipo.</p></details>
+  </div></div>
+  <footer class="foot"><div class="wrap">Los lienzos (plan de maduración, canvas de equipo, hoja de ruta, lienzo de la transferencia y el modelo de negocio y pitch) son las plantillas de trabajo del programa de transferencia, llevadas a formato interactivo. Estimaciones orientativas; no constituyen avalúo.</div></footer>
+</section>
+
+<!-- APP -->
+<section id="v-app" class="view" hidden>
+  <div class="wrap">
+    <div class="toolbar">
+      <span class="saved" id="saved" aria-live="polite"></span>
+      <span class="sp"></span>
+      <button class="btn small ghost" data-act="exp">Descargar mi avance</button>
+      <label class="btn small ghost">Cargar un avance<input type="file" id="imp-own" accept=".json,application/json" hidden></label>
+      <button class="btn small ghost danger" data-act="reset">Empezar de cero</button>
+    </div>
+    <nav class="steps" id="steps" aria-label="Pasos del plan"></nav>
+    <div id="main" class="stage"></div>
+  </div>
+</section>
+</main>
+
+<div id="sheet" aria-hidden="true"></div>
+<div id="present" hidden role="dialog" aria-modal="true" aria-label="Modo presentación del pitch"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* ════════ Configuración y datos ════════ */
+const CONFIG={institucion:'Universidad Colegio Mayor de Cundinamarca',oficina:'Área de Transferencia de Resultados de Investigación (ATRI)'};
+const BANK=[{"k":"TRL","name":"Madurez tecnológica","levels":[{"n":1,"title":"Principios básicos observados","q":["¿Identificó principios científicos o teóricos básicos que pueden dar origen a una nueva tecnología, método o aplicación?","¿Existe una publicación, informe o documento que sustente esos principios (idealmente revisado por pares)?"]},{"n":2,"title":"Concepto de tecnología formulado","q":["¿Formuló el concepto de su desarrollo (tecnología, método o herramienta), su aplicación y cómo se pondría en práctica?","¿Analizó artículos científicos, modelos o teorías que respaldan la aplicación de su idea?","¿Hizo un análisis del estado del arte y encontró que no existe un desarrollo igual al suyo?","¿Tiene un plan de desarrollo (fases, responsables y tiempos)?","¿Realizó estudios o pequeños experimentos que aportan información para pruebas de concepto posteriores?"]},{"n":3,"title":"Prueba de concepto analítica y experimental de las funciones y / o características esenciales","q":["¿Identificó los componentes o partes de su desarrollo?","¿Realizó pruebas analíticas o de concepto (laboratorio, simulación o ejercicio controlado) que demuestran su factibilidad?","¿Comparó los resultados de sus pruebas con lo que esperaba según el análisis o la teoría?","¿Validó los componentes por separado, aunque todavía no estén integrados en un conjunto completo?","¿Tiene documentados los resultados analíticos o experimentales?"]},{"n":4,"title":"Validación de componente / subsistema en entorno laboratorio","q":["¿Verificó que los componentes pueden funcionar de manera integrada como un conjunto?","¿Construyó una primera versión completa (prototipo, versión piloto o borrador) y la probó en un entorno controlado?","¿Evaluó de forma preliminar el ciclo de vida y el potencial de escalamiento del desarrollo?","¿Tiene documentada una prueba de rendimiento y la definición del entorno relevante?"]},{"n":5,"title":"Validación de componente / subsistema en un entorno relevante","q":["¿Integró los elementos del desarrollo en una configuración similar a la aplicación final?","¿Probó el desarrollo en un entorno simulado o relevante (parecido al real) con elementos de soporte realistas?","¿Identificó aspectos de seguridad, éticos, ambientales o requisitos regulatorios?","¿Mejoró los modelos técnicos y económicos del diseño inicial?","¿Documentó los requisitos de escala y una prueba de rendimiento que coincide con lo previsto?"]},{"n":6,"title":"Demostración de modelo o prototipo de sistema / subsistema en un entorno relevante","q":["¿Cuenta con una versión piloto que realiza todas las funciones necesarias?","¿La versión piloto superó pruebas de factibilidad en condiciones cercanas a la operación real (pruebas «beta»)?","¿Tiene documentación técnica de la versión piloto (planos, manuales, código, protocolos, guías)?","¿Modeló el desarrollo a escala comercial y refinó el análisis de ciclo de vida y la evaluación económica?"]},{"n":7,"title":"Sistema de demostración validado en entorno real","q":["¿El desarrollo opera, o está próximo a operar, a escala precomercial?","¿Demostró que el desarrollo funciona en el entorno operativo real?","¿Realizó la primera corrida piloto y las pruebas finales reales?","¿Identificó los aspectos de fabricación y perfeccionó la evaluación económica y de ciclo de vida?"]},{"n":8,"title":"Primer sistema tipo comercial","q":["¿El desarrollo está integrado y probado en su forma final bajo las condiciones esperadas?","¿Resolvió las cuestiones operativas y de fabricación?","¿Elaboró los documentos de uso y mantenimiento (manual de usuario, soporte técnico)?","¿El desarrollo cumple los estándares o normas del sector correspondiente?"]},{"n":9,"title":"Aplicación comercial implementada en el mercado / público objetivo","q":["¿El desarrollo está probado en el entorno real y disponible para comercializarse o aplicarse?","¿Está listo para producirse o replicarse en serie y comercializarse?","¿Tiene documentados los resultados operacionales?"]}]},{"k":"CRL","name":"Madurez comercial o de mercado","levels":[{"n":1,"title":"Hipótesis básicas de las necesidades del mercado y usuarios potenciales","q":["¿Identificó, aunque sea de forma general, un segmento de mercado y posibles clientes o usuarios?","¿Tiene una idea general de la oportunidad comercial de su desarrollo?","¿Hizo una descripción inicial de la viabilidad comercial (por ejemplo, un primer lienzo Canvas)?"]},{"n":2,"title":"Necesidades específicas identificadas en el mercado y definición de posibles soluciones","q":["¿Hizo un análisis de mercado con fuentes secundarias (estructura, segmentos y dinámica del mercado)?","¿Describió con claridad el problema o la necesidad que resuelve su desarrollo?","¿Conoce las ofertas existentes en el mercado, sus fortalezas y debilidades?","¿Identificó y enumeró algunos competidores o alternativas?","¿Estimó de forma general el número de posibles usuarios (mercado total disponible)?"]},{"n":3,"title":"Comprensión de la aplicación de la tecnología y primera identificación de competidores","q":["¿Ya conversó directamente con posibles clientes, usuarios o expertos del sector?","¿Tiene una hipótesis clara del problema del cliente, respaldada por esa información?","¿Tiene un borrador del modelo de negocio en formato lienzo (Canvas)?","¿Cuantificó el potencial de mercado (TAM y SAM)?","¿Analizó las tecnologías o productos que compiten con el suyo, directos e indirectos?"]},{"n":4,"title":"Formulación de la propuesta de valor y conocimiento a profundidad de la competencia","q":["¿Estableció contacto con varios posibles clientes o usuarios (por ejemplo, entre 5 y 10 en B2B)?","¿Definió una propuesta de valor clara, confirmada por varios clientes?","¿Tiene un modelo de negocio completo con ingresos y costos?","¿Elaboró primeras proyecciones económicas con cifras (volúmenes, precios)?","¿Hizo un benchmarking con la competencia y mapeó la cadena de valor (proveedores, socios, clientes)?"]},{"n":5,"title":"Alineación con el mercado- Validación de la problemática – Identificación de barreras y drivers de mercado","q":["¿Los clientes o usuarios confirmaron que su solución resuelve su problema?","¿Definió cuáles serán los primeros clientes objetivo y mantiene relación con ellos?","¿Probó su modelo de negocio con clientes y lo ajustó según sus comentarios?","¿Tiene una primera versión del modelo de ingresos con hipótesis de precios?","¿Verificó su diferenciación frente a la competencia con retroalimentación del mercado?"]},{"n":6,"title":"Optimización del producto tecnológico- Confirmación de la propuesta de valor – cuantificación del mercado y creación de alianzas","q":["¿Clientes o usuarios probaron el producto y confirmaron su valor y beneficios?","¿Formó alianzas con actores clave de la cadena de valor (socios, clientes piloto)?","¿Tiene un proceso o ruta de ventas definido y un plan de ventas y mercadeo?","¿Probó el precio con clientes (ventas de prueba o similar)?","¿Tiene proyecciones de ingresos y costos a 1–3 años con supuestos sustentados?","¿Conoce los requisitos regulatorios y de certificación y los pasos para cumplirlos?"]},{"n":7,"title":"Validación del modelo financiero y la unidad de toma de decisiones","q":["¿Hay clientes que muestran una clara disposición a pagar (ajuste producto–mercado)?","¿Clientes y actores relevantes participaron en pruebas o calificaciones extendidas del producto?","¿Realizó ventas de prueba o primeras ventas de versiones del producto?","¿Validó el modelo financiero y las proyecciones con datos de ventas?","¿Tiene acuerdos con proveedores o canales de venta para poder escalar?"]},{"n":8,"title":"Introducción preliminar al mercado o sociedad","q":["¿Tiene ventas iniciales a compradores o usuarios objetivo?","¿Cuenta con las certificaciones y el cumplimiento normativo del producto y de su operación?","¿Tiene estrategias para ampliar la producción y las ventas a mayor escala?","¿Sus métricas muestran que el modelo es rentable (por ejemplo, el costo de conseguir clientes es razonable)?"]},{"n":9,"title":"Lanzamiento al mercado / transferencia a la sociedad","q":["¿Vende a varios clientes de forma repetible y escalable?","¿Tiene un modelo de negocio definitivo con ingresos crecientes y recurrentes?","¿El negocio crece en nuevos mercados, geografías o segmentos y es rentable y sostenible en el tiempo?"]}]},{"k":"IPRL","name":"Propiedad intelectual","levels":[{"n":1,"title":"Hipótesis inicial de propiedad Intelectual","q":["¿Tiene una hipótesis inicial de qué podría protegerse (patente, software, derecho de autor, diseño, secreto)?","¿Tiene alguna descripción, aunque sea general, de los posibles derechos de propiedad intelectual?"]},{"n":2,"title":"Mapeo de formas de protección de propiedad intelectual presentes y futuras","q":["¿Mapeó las formas de protección que existen o podrían surgir durante el desarrollo?","¿Aclaró quiénes son los inventores o autores y conoce las políticas de PI que le aplican?","¿Verificó que los derechos de PI están bajo control de la universidad o del equipo (acuerdos, cesiones)?"]},{"n":3,"title":"Identificación de formas de protección de propiedad intelectual y vigilancia tecnológica preliminar","q":["¿Describió la invención o creación con suficiente detalle (divulgación de la invención)?","¿Hizo búsquedas propias de publicaciones y del estado de la técnica?","¿Decidió qué formas de PI son clave y deberían protegerse?"]},{"n":4,"title":"Estudio preliminar de patentabilidad u otro mecanismo de protección","q":["¿Confirmó la novedad y patentabilidad con búsquedas hechas por profesionales?","¿Definió las prioridades de protección y las alternativas si la patente no es adecuada?","¿Presentó una solicitud provisional u otro registro inicial?"]},{"n":5,"title":"Borrador de la estrategia de propiedad intelectual y primera solicitud de protección de PI","q":["¿Tiene un borrador de estrategia de PI revisado por un experto?","¿Presentó la primera solicitud completa (patente u otro registro) con acompañamiento profesional?","¿Tiene acuerdos vigentes que definen el control de los derechos (cesión, titularidad)?"]},{"n":6,"title":"Implementación de estrategia de propiedad intelectual","q":["¿Recibió una respuesta positiva de la autoridad sobre su solicitud (o hizo el análisis de la respuesta)?","¿Tiene una estrategia de PI validada por un profesional y vinculada a la estrategia comercial?","¿Hizo una evaluación inicial de libertad para operar o un mapa (paisaje) de patentes?"]},{"n":7,"title":"Se presentan todos los derechos de propiedad Intelectual pertinentes","q":["¿Presentó otras protecciones pertinentes (marcas, diseños, solicitudes complementarias)?","¿Inició fases nacionales o internacionales de la solicitud (por ejemplo, PCT)?"]},{"n":8,"title":"Estrategia de propiedad intelectual completamente implementada en el proyecto","q":["¿Le concedieron la primera patente u otro derecho con alcance relevante para el negocio?","¿Implementó por completo la estrategia de PI y gestiona los acuerdos de forma profesional?","¿Realizó una evaluación detallada de libertad de operación?"]},{"n":9,"title":"Fuerte apoyo y protección de los derechos de propiedad intelectual","q":["¿Tiene derechos concedidos y en vigor en los países relevantes?","¿El derecho está vigente y sin procedimientos de invalidación?","¿Protege otras formas (marcas, diseños, secretos, acuerdos) que respaldan el negocio?"]}]},{"k":"TeamRL","name":"Equipo de trabajo","levels":[{"n":1,"title":"Faltan por cubrir roles clave y todavía no se es consciente de la necesidad de un equipo","q":["¿El equipo tiene claro qué conocimientos, habilidades y recursos necesita el desarrollo?","¿Hay interés en conformar un equipo con experiencia en el área específica de la investigación?"]},{"n":2,"title":"Visión y primera idea sobre competencias necesarias o recursos externos","q":["¿Tiene una idea de las competencias y recursos adicionales que necesita?","¿Cuenta al menos con una persona que tiene las competencias principales del desarrollo?"]},{"n":3,"title":"Algunas de las competencias / recursos necesarios están presentes. Competencias / recursos necesarios definidos (y plan para encontrar)","q":["¿Definió las competencias y recursos que ya tiene y los que le faltan?","¿Tiene un plan de equipo inicial (menos de 1 año) con la forma de conseguir las competencias prioritarias?"]},{"n":4,"title":"Asignación de líder de equipo e identificación de múltiples competencias. Inicio del plan para contratar u obtener recursos clave adicionales","q":["¿Designó un líder o representante del equipo para el proceso de validación?","¿Inició la vinculación de más integrantes (estudiantes, semilleros, aliados) con competencias clave?","¿El equipo empezó a conversar sobre propiedad intelectual y compromisos a mediano y largo plazo?"]},{"n":5,"title":"Equipo de trabajo inicial con las principales competencias necesarias. El equipo ha discutido los roles y han alineado objetivos","q":["¿Están asignados las funciones, roles, compromisos y tiempos de ejecución?","¿Acordaron la participación de cada integrante según su compromiso y contribución al proyecto?"]},{"n":6,"title":"Equipo complementario, diverso y comprometido","q":["¿El equipo reúne competencias tecnológicas y empresariales o de gestión?","¿Vinculó expertos clave para esta etapa del desarrollo?","¿Adquirió habilidades o recursos mediante convocatorias externas (emprendimiento, gestión comercial, transferencia)?","¿Identificó los riesgos de desempeño del equipo?"]},{"n":7,"title":"El equipo y la cultura están plenamente implantados y desarrollados proactivamente","q":["¿El equipo está alineado con las metas y la visión del proyecto?","¿Adquirió las habilidades necesarias para transferir el resultado de investigación?","¿Tiene un plan actualizado para construir el equipo necesario a largo plazo?"]},{"n":8,"title":"Hay un claro liderazgo y gestión","q":["¿Existe un liderazgo y una gestión claros?","¿Cuenta con asesores pertinentes, principalmente del ámbito comercial?","¿Están en marcha las contrataciones según un plan a largo plazo?"]},{"n":9,"title":"Equipo y organización de alto rendimiento y bien estructurado que se mantiene y funciona a lo largo del tiempo","q":["¿El equipo está motivado, entrenado y reconocido por alcanzar las metas?","¿Existe una estructura clara y funcional (roles, procesos) que se mantiene en el tiempo?"]}]},{"k":"IRL","name":"Inversión y financiamiento","levels":[{"n":1,"title":"No hay una visión clara de las necesidades de financiación y opciones de financiación","q":["¿Tiene una idea comercial inicial descrita de forma comprensible?","¿Tiene una idea de cuánta financiación necesita y para qué?"]},{"n":2,"title":"Necesidades de financiación definidas y opciones de financiamiento para hitos iniciales","q":["¿Avanzó en el concepto de negocio y en una primera propuesta de valor (por ejemplo, NABC)?","¿Mapeó las necesidades iniciales de financiación (costos y presupuesto) por hitos?","¿Tiene un plan básico con opciones de financiación para los primeros hitos (3 a 6 meses)?"]},{"n":3,"title":"Mapeo de herramientas de financiación incluyendo requisitos de entrada","q":["¿Describió bien el concepto de negocio y un plan inicial de verificación (hipótesis y objetivos)?","¿Conoce las opciones de financiación y sus requisitos de entrada?","¿Obtuvo una primera financiación para avanzar en la madurez del desarrollo (por ejemplo, recursos internos)?"]},{"n":4,"title":"Primeros contactos con inversores externos","q":["¿Tiene un discurso breve (pitch) y una presentación escrita del concepto de negocio?","¿Tiene un plan de financiación a 12–18 meses con presupuesto y posibles fuentes?","¿Planeó o hizo contactos con inversionistas o convocatorias para una primera oferta?"]},{"n":5,"title":"Presentación orientada a inversionistas y un plan de financiación a largo plazo","q":["¿Cuenta con una presentación para inversionistas (pitch deck) probada y en ajuste?","¿Está desarrollando proyecciones financieras y presupuestos?","¿Preparó o presentó solicitudes a otras fuentes (subvenciones, convocatorias, préstamos)?"]},{"n":6,"title":"Sólido caso de inversión y discusiones con los inversores potenciales en curso alrededor de una oferta","q":["¿Tiene un pitch deck probado que incluye potencial comercial y finanzas?","¿Definió una primera oferta (monto, valoración y uso de los fondos)?","¿El equipo decidió buscar financiación de capital y aceptar nuevos socios?"]},{"n":7,"title":"Se mantienen discusiones sobre la hoja de términos con inversores interesados","q":["¿Tiene un plan de negocio completo con finanzas y plan de hitos?","¿Mantiene conversaciones con inversionistas sobre una oferta definida?","¿El equipo y los propietarios están alineados sobre la inversión?"]},{"n":8,"title":"Inversión obtenida y ejecución del plan presentado","q":["¿Tiene organizada la estructura y los acuerdos (titularidad, esquema de transferencia como spin-off o licencia)?","¿Tiene discusiones concretas u hoja de términos con inversionistas interesados?","¿Tiene listo el material que piden los inversionistas (finanzas, plan de negocio)?"]},{"n":9,"title":"Inversión obtenida y necesidades y opciones de inversión adicionales continuamente consideradas","q":["¿Cerró formalmente la inversión, con toda la documentación, y recibió los recursos?","¿Evalúa de forma continua las necesidades y opciones de inversión futuras?"]}]},{"k":"SRL","name":"Madurez social","levels":[{"n":1,"title":"Identificación de la problemática o necesidad de la sociedad","q":["¿Identificó con claridad un problema que afecta a la comunidad, contextualizado en su territorio?","¿Su resultado de investigación está alineado con al menos un Objetivo de Desarrollo Sostenible?"]},{"n":2,"title":"Concepto del potencial de la tecnología","q":["¿Identificó a los actores o partes interesadas relevantes del proyecto?","¿El proyecto se construyó a partir de los requerimientos de la universidad o de la comunidad a impactar?"]},{"n":3,"title":"Prueba conceptual inicial de la (s) solución (es) propuesta (s) junto con las partes interesadas relevantes","q":["¿Inició el relacionamiento con los actores sociales participantes?","¿Tiene un plan para involucrar a los actores relevantes (investigadores, industria, sociedad civil)?","¿La propuesta evidencia participación de la comunidad?","¿Formuló hipótesis sobre las condiciones sociales y ambientales, positivas y negativas, de aplicar la solución?","¿Tiene un borrador del modelo de negocio social en formato lienzo?"]},{"n":4,"title":"Problema validado a través de pruebas piloto en un ambiente controlado","q":["¿La solución propuesta es pertinente frente al problema identificado inicialmente?","¿Hizo una primera verificación con actores y proveedores de su hipótesis de impacto social y ambiental?","¿Tiene un modelo de negocio social completo en formato lienzo?","¿Hizo una prueba piloto en un ambiente controlado con una muestra de la población objetivo?"]},{"n":5,"title":"Soluciones propuestas validadas en un entorno relevante","q":["¿Existe apropiación de la comunidad en la toma de decisiones?","¿Validó la solución con pruebas piloto en entornos reales o relevantes junto con líderes o actores de la comunidad?","¿Probó, al menos en parte, el modelo de negocio social con clientes?","¿Identificó los factores de riesgo de la solución (recursos, redes, ambiente político, cultura)?","¿Definió estrategias de aplicación y cooperación?"]},{"n":6,"title":"Solución demostrada en un entorno relevante","q":["¿Demostró que la solución atiende la necesidad o problemática de la sociedad?","¿Los resultados tienen aplicabilidad en el corto o mediano plazo?","¿Actualizó el modelo de negocio social con los comentarios de clientes y usuarios?","¿Describió de forma completa los factores de riesgo de la solución?"]},{"n":7,"title":"Refinamiento del proyecto o solución","q":["¿Hay sesiones de revisión, actualización y control de las actividades realizadas?","¿Cuenta con una solución validada en contexto real, con resultados favorables y replicable?","¿Definió una medición de referencia del impacto para hacerle seguimiento y comunicarlo?"]},{"n":8,"title":"Solución propuesta y plan de adaptación social","q":["¿La solución resuelve total o parcialmente una necesidad de una comunidad o sector productivo?","¿Documentó los aprendizajes de implementar la solución en la comunidad?","¿Construyó un plan de adaptación social del resultado de investigación?","¿Comunica de forma transparente los impactos (positivos y negativos) ambientales y sociales?"]},{"n":9,"title":"Solución actual del proyecto probada en un entorno relevante","q":["¿La comunidad se apropió del resultado y lo integró en su vida cotidiana?","¿Evaluó la solución con otros actores y generó réplicas o escalamiento?","¿La ejecución generó vínculos con actores externos a la comunidad?"]}]}];
+const KEY='plan-unimayor:borrador';
+const DIMS=[
+  ['TRL','Tecnología','Qué tan probada está la solución'],
+  ['CRL','Mercado','Qué tanto se conoce al cliente y la demanda'],
+  ['IPRL','Propiedad intelectual','Qué tan protegido y documentado está'],
+  ['TeamRL','Equipo','Si están las personas y competencias'],
+  ['IRL','Financiación','Qué tan claro es el dinero necesario'],
+  ['SRL','Impacto social','Qué tan validado está el beneficio social']
+];
+const REN={MRL:'CRL',TMRL:'TeamRL',FRL:'IRL'};
+const ETAPAS=[
+  ['Identificación y declaración','de activos transferibles','Ruta de Madurez: ficha de caracterización','done'],
+  ['Diagnóstico de madurez','y valoración económica','Ruta de Madurez y Ruta de Valor','done'],
+  ['Gestión de la propiedad intelectual','','Auditoría de PI y casilla «Protección» del lienzo','mid'],
+  ['Maduración y escalamiento','del activo','Plan de maduración, equipo y hoja de ruta','here'],
+  ['Estrategia de transferencia','y articulación','Lienzo de transferencia y pitch','here']
+];
+const STEPS=[['imp','Datos de partida'],['plan','Plan de maduración'],['eq','Equipo'],['ruta','Hoja de ruta'],['lien','Lienzo'],['pitch','Pitch y ficha']];
+const HOW=[
+  ['Datos de partida','Carga tu paquete de Madurez y, si lo tienes, el de Valor. O escribe tus niveles a mano.'],
+  ['Plan de maduración','Mueve la meta de cada dimensión y mira la brecha en la telaraña. Cada criterio faltante puede volverse actividad.'],
+  ['Equipo','Define quién hace qué, qué valores comparten y qué expertos faltan.'],
+  ['Hoja de ruta','Arrastra las actividades entre trimestres: recursos, responsables, aliados, resultados y evidencias.'],
+  ['Lienzo de transferencia','Dieciocho casillas en tres bloques: crear valor, oportunidad de mercado y desarrollo del negocio.'],
+  ['Pitch y ficha','Un borrador del pitch se arma con lo anterior. Preséntalo a pantalla completa o descarga la ficha en PDF.']
+];
+const PLAN_F=[
+  ['desc','Descripción de la tecnología','Qué es, cómo funciona y en qué se diferencia.'],
+  ['ben','Beneficios potenciales','Quién gana qué si la tecnología llega al mercado o a la sociedad.'],
+  ['prop','Propósito y objetivos del plan de maduración','Qué se quiere lograr con este plan y para cuándo.'],
+  ['req','Requerimientos de maduración','Pruebas, desarrollos, validaciones o permisos que faltan para llegar a la meta.'],
+  ['rec','Recursos claves y habilidades','Equipos, laboratorios, personas y conocimientos necesarios.'],
+  ['pi','Propiedad intelectual y documentación relevante','Qué se protege, cómo y qué documentos hay que preparar (empaquetamiento).'],
+  ['ges','Gestión y estructura del equipo del proyecto','Quién lidera, quién ejecuta y cómo se toman las decisiones.'],
+  ['fac','Evaluación de factibilidad y de doabilidad','¿Es posible técnicamente? ¿Es realista con el equipo, el tiempo y el dinero que hay?'],
+  ['pre','Presupuesto y financiación','Cuánto cuesta el plan y de dónde saldrá el dinero.']
+];
+const EQ_F=[
+  ['fort','Fortalezas y debilidades','Qué hace bien el equipo y qué le falta.'],
+  ['metasC','Metas comunes','Lo que todos quieren lograr juntos con este resultado.'],
+  ['valores','Valores','Principios con los que el equipo trabaja y decide.'],
+  ['reglas','Reglas y actividades','Acuerdos de trabajo: reuniones, tiempos, comunicación, decisiones.'],
+  ['metasP','Metas personales','Qué busca cada integrante: publicar, graduarse, ingresos, reconocimiento.'],
+  ['nec','Necesidades y expectativas','Qué necesita cada uno del equipo y de la universidad.'],
+  ['junta','Junta de revisión permanente','Quiénes revisan el avance cada cierto tiempo y cada cuánto.'],
+  ['expertos','Sujetos expertos en la materia','Personas externas que asesoran: técnicas, jurídicas, comerciales.']
+];
+const LIEN=[
+  {b:0,id:'ident',t:'Identificación',q:'¿Cuáles son los posibles derechos de propiedad intelectual de proyectos de I+D que deben divulgarse? ¿Existen otros resultados relevantes de los proyectos de I+D de la organización?'},
+  {b:0,id:'eval',t:'Evaluación',q:'¿Existe un mercado potencial para comercializar la tecnología? ¿Qué factores se pueden evaluar para tomar decisiones desde una perspectiva de mercado (propuesta de valor, investigación de mercado, fortaleza de la protección)? ¿Cuáles son los próximos pasos para comercializar la tecnología?'},
+  {b:0,id:'prot',t:'Protección',q:'¿Es posible proteger la tecnología y qué mecanismos se pueden utilizar? ¿Qué derechos de propiedad intelectual se pueden generar y cómo se pueden otorgar? ¿Está todo conforme a los marcos legales aplicables?'},
+  {b:0,id:'alist',t:'Alistamiento técnico',q:'¿Está la tecnología lo suficientemente madura (lista) para crear valor para el mercado? ¿Qué tipo de desarrollo se requiere para materializar la oportunidad de innovación?'},
+  {b:0,id:'act',t:'Actividades clave',q:'¿Qué actividades no técnicas se deben realizar para poder llevar la tecnología para el mercado?'},
+  {b:0,id:'rec',t:'Recursos clave',q:'¿Qué recursos físicos, intelectuales, humanos y económicos necesito para alistar mi tecnología?'},
+  {b:1,id:'cli',t:'Clientes',q:'¿Para quién creamos valor? ¿Cuáles son nuestros segmentos más importantes?'},
+  {b:1,id:'dol',t:'Dolores',q:'¿Cuáles son aquellas dificultades o inconvenientes que el usuario se encuentra en algún aspecto de su vida o trabajo?'},
+  {b:1,id:'ale',t:'Alegrías',q:'¿Cuáles son los beneficios que tus usuarios potenciales buscan obtener? Ej.: ahorro en tiempo, en costos, tranquilidad, reconocimiento.'},
+  {b:1,id:'prop',t:'Propuesta de valor',q:'¿Qué valor proporcionamos a nuestros clientes? ¿Qué problema ayudamos a solucionar? ¿Qué necesidades satisfacemos? ¿Qué paquetes de productos o servicios ofrecemos a cada segmento?'},
+  {b:1,id:'ing',t:'Fuentes de ingresos',q:'¿Por qué valor están dispuestos a pagar nuestros clientes? ¿Por qué y cómo pagan actualmente? ¿Cómo les gustaría pagar? ¿Cuánto reporta cada fuente al total de ingresos?'},
+  {b:1,id:'ali',t:'Aliados clave',q:'¿Quiénes son nuestros socios y proveedores clave? ¿Qué recursos clave adquirimos a nuestros socios? ¿Qué actividades clave realizan?'},
+  {b:2,id:'rel',t:'Acciones de relacionamiento',q:'¿Tiene la organización fuentes de información, canales de comunicación y materiales promocionales adecuados para identificar, encontrar e interactuar con los socios objetivo? ¿Qué actividades clave debe ejecutar para llegar a ellos?'},
+  {b:2,id:'can',t:'Canales',q:'¿Qué canales prefieren nuestros segmentos de mercado? ¿Cómo establecemos el contacto con los clientes? ¿Cuáles tienen mejores resultados y cuáles son más rentables?'},
+  {b:2,id:'neg',t:'Negociación',q:'¿Se ha preparado cuidadosamente el proceso de negociación? ¿Han sido negociados los términos y condiciones del acuerdo por las partes?'},
+  {b:2,id:'con',t:'Contratación',q:'¿Las partes han identificado el mecanismo legal apropiado (contrato) para transferir la tecnología? ¿El acuerdo de licencia de propiedad intelectual incluye el contenido preciso?'},
+  {b:2,id:'seg',t:'Seguimiento',q:'¿Está el socio preparado para implementar la tecnología y obtener los beneficios que puede proporcionar? ¿Tiene la organización los mecanismos para monitorear el curso de la asociación de transferencia?'},
+  {b:2,id:'imp',t:'Impactos esperados',q:'¿Qué impacto o cambios a largo plazo podrían ser observables para sus grupos objetivo y partes interesadas, dentro de la región, a nivel nacional o internacional?'}
+];
+const BLOCKS=[['Creación de valor','Qué tienes y qué le falta para estar listo'],['Oportunidad de mercado','Para quién es y por qué lo querrían'],['Desarrollo del negocio','Cómo llegas a ellos y cómo se cierra el acuerdo']];
+const PITCH=[
+  ['cambio','Declaración del cambio','Una declaración sencilla sobre el cambio que usted y su tecnología buscan producir en el mundo.'],
+  ['frase','Frase memorable','Una explicación memorable de una sola frase.'],
+  ['sit','Situación actual','Por qué el proyecto es importante: el problema y a quién afecta.'],
+  ['tec','Tecnología','Qué es y qué la hace diferente, en lenguaje que entienda cualquier persona.'],
+  ['ben','Beneficios','Qué ganan los usuarios y la sociedad.'],
+  ['mod','Modelo de negocio','Quién paga, por qué y cómo llega la solución.'],
+  ['tes','Tesis de transferencia','Por qué esta tecnología debe transferirse y por qué ahora.'],
+  ['plan','Plan de maduración','Dónde está hoy, a dónde llegará y qué falta.'],
+  ['hr','Hoja de ruta','Los hitos principales por trimestre.'],
+  ['eq','Equipo','Quién está detrás y por qué puede lograrlo.'],
+  ['llam','Llamado a la acción','Termina con una petición clara: ¿cuál es el siguiente paso?']
+];
+
+/* ════════ Utilidades ════════ */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-3);
+const today=()=>new Date().toISOString().slice(0,10);
+const filled=v=>typeof v==='string'&&v.trim().length>0;
+const getp=(o,p)=>p.split('.').reduce((a,k)=>a==null?undefined:a[k],o);
+const setp=(o,p,v)=>{const ks=p.split('.');let a=o;ks.slice(0,-1).forEach(k=>{if(a[k]==null||typeof a[k]!=='object')a[k]={};a=a[k]});a[ks[ks.length-1]]=v};
+const slug=s=>(s||'plan').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9]+/g,'_').replace(/^_|_$/g,'').slice(0,40)||'plan';
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v);return true}catch(e){return false}};
+const nfM=new Intl.NumberFormat('es-CO',{maximumFractionDigits:0});
+const fmtM=n=>n==null||isNaN(n)?'—':'$ '+nfM.format(n)+' millones';
+const dimOf=k=>DIMS.find(d=>d[0]===k);
+const dimIdx=k=>DIMS.findIndex(d=>d[0]===k);
+const bankDim=k=>BANK.find(d=>d.k===k);
+const lvlTitle=(k,n)=>{const d=bankDim(k),l=d&&d.levels.find(x=>x.n===n);return l?l.title:''};
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),3200)}
+function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type||'application/json'}));a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),5000)}
+function readFile(f,cb){const r=new FileReader();r.onload=()=>cb(String(r.result));r.readAsText(f)}
+
+/* ════════ Estado ════════ */
+const blank=()=>({v:1,step:0,
+  ficha:{nombre:'',creadores:'',grupo:'',facultad:'',descripcion:'',problema:''},
+  origen:{madurez:'',valor:''},
+  niveles:{},metas:{},answers:{},
+  valor:{modo:'ninguna',min:null,max:null,ref:null,costo:null,conf:null},
+  plan:{},
+  equipo:{miembros:[{n:'',r:''}]},
+  ruta:{objetivo:'',inicio:new Date().getFullYear()+1,nq:4,items:[]},
+  lienzo:{},pitch:{}});
+let S=blank();
+{const raw=lsGet(KEY);if(raw){try{const o=JSON.parse(raw);if(o&&o.ficha&&o.ruta)S=merge(blank(),o)}catch(e){}}}
+function merge(b,o){for(const k of Object.keys(o||{})){if(o[k]&&typeof o[k]==='object'&&!Array.isArray(o[k])&&b[k]&&typeof b[k]==='object'&&!Array.isArray(b[k]))b[k]=merge(b[k],o[k]);else b[k]=o[k]}return b}
+const UI={open:null,gapOpen:{},pi:0};
+let saveT;
+function save(){const el=$('#saved');el.textContent='Guardando…';clearTimeout(saveT);saveT=setTimeout(()=>{const ok=lsSet(KEY,JSON.stringify(S));el.textContent=ok?'Avance guardado en este navegador':'No se pudo guardar solo: descarga tu archivo para no perder el avance'},300)}
+
+/* ════════ Cálculos ════════ */
+const cur=k=>+S.niveles[k]||0;
+const goal=k=>S.metas[k]==null?cur(k):+S.metas[k];
+function levelsFromAnswers(ans){
+  const r={};
+  BANK.forEach(d=>{let reached=0;for(const L of d.levels){if(L.q.every((_,i)=>{const a=ans[`${d.k}-${L.n}-${i}`];return a&&a.v==='si'}))reached=L.n;else break}r[d.k]=reached});
+  return r;
+}
+function critStatus(k,n,i){const a=S.answers[`${k}-${n}-${i}`];return a&&a.v?a.v:''}
+function missing(k){ // criteria between current level+1 and goal that are not yet "sí"
+  const d=bankDim(k),out=[];if(!d)return out;
+  for(let n=cur(k)+1;n<=goal(k);n++){const L=d.levels.find(x=>x.n===n);if(!L)continue;
+    L.q.forEach((q,i)=>{if(critStatus(k,n,i)!=='si')out.push({k,n,i,q})})}
+  return out;
+}
+const qToAct=(k,n,q)=>`Cumplir el criterio ${k} ${n}: «${q.replace(/^¿/,'').replace(/\?$/,'').trim()}»`;
+const lblQ=q=>`T${((q-1)%4)+1} · ${S.ruta.inicio+Math.floor((q-1)/4)}`;
+function progress(){
+  const p={};
+  p.imp=Object.keys(S.niveles).length?1:(S.ficha.nombre?.4:0);
+  p.plan=(PLAN_F.filter(f=>filled(S.plan[f[0]])).length+(DIMS.some(d=>goal(d[0])>cur(d[0]))?1:0))/(PLAN_F.length+1);
+  p.eq=(EQ_F.filter(f=>filled(S.equipo[f[0]])).length+(S.equipo.miembros.some(m=>filled(m.n))?1:0))/(EQ_F.length+1);
+  p.ruta=Math.min(1,(filled(S.ruta.objetivo)?.25:0)+Math.min(S.ruta.items.length,6)/6*.55+(S.ruta.items.some(t=>filled(t.resp))?.2:0));
+  p.lien=LIEN.filter(c=>filled(S.lienzo[c.id])).length/LIEN.length;
+  p.pitch=PITCH.filter(f=>filled(S.pitch[f[0]])).length/PITCH.length;
+  p.all=STEPS.reduce((a,s)=>a+p[s[0]],0)/STEPS.length;
+  return p;
+}
+
+/* ════════ Importación ════════ */
+function importMadurez(o){
+  const st=o.state||{},f=st.ficha||{};
+  S.ficha.nombre=f.nombre||S.ficha.nombre;
+  const cr=Array.isArray(f.creadores)?f.creadores.map(c=>c&&c.nombre).filter(Boolean).join('; '):'';
+  S.ficha.creadores=cr||S.ficha.creadores;
+  S.ficha.grupo=f.grupo||f.semillero||S.ficha.grupo;
+  S.ficha.facultad=f.facultad||S.ficha.facultad;
+  S.ficha.descripcion=f.descripcion||S.ficha.descripcion;
+  S.ficha.problema=f.problema||S.ficha.problema;
+  const ans={};Object.keys(st.answers||{}).forEach(k=>{ans[k.replace(/^(MRL|TMRL|FRL)-/,(m,a)=>REN[a]+'-')]=st.answers[k]});
+  S.answers=ans;
+  let lv=null;
+  if(o.niveles&&typeof o.niveles==='object'){lv={};Object.keys(o.niveles).forEach(k=>{const nk=REN[k]||k;const v=+o.niveles[k];if(dimOf(nk)&&v>=0&&v<=9)lv[nk]=v})}
+  if(!lv||!Object.keys(lv).length)lv=levelsFromAnswers(ans);
+  S.niveles=lv;
+  DIMS.forEach(d=>{if(S.metas[d[0]]==null)S.metas[d[0]]=Math.min(9,cur(d[0])+2)});
+  S.origen.madurez='Ruta de Madurez'+(o.exportedAt?' · exportado '+String(o.exportedAt).slice(0,10):'');
+  if(!S.plan.desc&&f.descripcion)S.plan.desc=f.descripcion;
+  return 'Se cargaron los datos y los niveles de madurez. La meta de cada dimensión quedó 2 niveles arriba: ajústala en el paso 2.';
+}
+function importValor(o){
+  const st=o.state||{},r=o.resultado;
+  if(!S.ficha.nombre&&st.ficha&&st.ficha.nombre)S.ficha.nombre=st.ficha.nombre;
+  if(r&&(r.ref>0||r.max>0)){
+    S.valor={modo:'importada',min:+r.min||0,max:+r.max||0,ref:+r.ref||0,costo:+r.costo||null,conf:r.confiabilidad||null};
+    S.origen.valor='Ruta de Valor'+(o.exportedAt?' · exportado '+String(o.exportedAt).slice(0,10):'');
+    return 'Se cargó el rango de valor de la Ruta de Valor.';
+  }
+  S.origen.valor='';
+  return 'Este archivo de la Ruta de Valor no trae el rango calculado. Vuelve a descargarlo desde la versión 1.1 de Valor o escribe los valores a mano.';
+}
+function importOwn(o){S=merge(blank(),o.state);return 'Se cargó el avance guardado.'}
+function importAny(txt){
+  let o;try{o=JSON.parse(txt)}catch(e){throw new Error('El archivo no es un JSON válido.')}
+  if(!o||typeof o!=='object')throw new Error('El archivo no es un JSON válido.');
+  if(o.app==='plan-unimayor'&&o.state)return importOwn(o);
+  if(o.app==='madurez-unimayor'&&o.state)return importMadurez(o);
+  if(o.app==='valor-unimayor')return importValor(o);
+  throw new Error('Este archivo no es un paquete de la Ruta de Madurez, de la Ruta de Valor ni un avance de este plan.');
+}
+
+/* ════════ Telaraña ════════ */
+function radarSVG(vals,goals,size,withLabels){
+  size=size||360;const n=DIMS.length,c=size/2,R=size/2-(withLabels===false?14:62);
+  const P=(i,v)=>{const a=-Math.PI/2+i*2*Math.PI/n;return [c+R*v/9*Math.cos(a),c+R*v/9*Math.sin(a)]};
+  const pts=f=>DIMS.map((d,i)=>P(i,f(d[0])).map(x=>x.toFixed(1)).join(',')).join(' ');
+  let s=`<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="Telaraña de madurez: nivel de hoy y meta en seis dimensiones">`;
+  [3,6,9].forEach(r=>{s+=`<polygon points="${DIMS.map((_,i)=>P(i,r).map(x=>x.toFixed(1)).join(',')).join(' ')}" fill="none" stroke="var(--line)" stroke-width="1"/>`});
+  DIMS.forEach((d,i)=>{const [x,y]=P(i,9);s+=`<line x1="${c}" y1="${c}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="var(--line)"/>`;
+    if(withLabels!==false){const [lx,ly]=P(i,10.9);const a=-Math.PI/2+i*2*Math.PI/n;const an=Math.cos(a)>.3?'start':Math.cos(a)<-.3?'end':'middle';
+      s+=`<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" text-anchor="${an}" font-family="Outfit,sans-serif" font-weight="700" font-size="13" fill="var(--ink)">${d[0]}</text><text x="${lx.toFixed(1)}" y="${(ly+19).toFixed(1)}" text-anchor="${an}" font-size="11" fill="var(--faint)">${vals[d[0]]||0} → ${goals[d[0]]||0}</text>`}});
+  s+=`<polygon points="${pts(k=>goals[k]||0)}" fill="rgba(255,206,33,.16)" stroke="var(--hi)" stroke-width="3" stroke-dasharray="7 5" stroke-linejoin="round"/>`;
+  s+=`<polygon points="${pts(k=>vals[k]||0)}" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round"/>`;
+  DIMS.forEach((d,i)=>{const [x,y]=P(i,vals[d[0]]||0);s+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5" fill="var(--accent)"/>`});
+  return s+'</svg>';
+}
+const vals=()=>Object.fromEntries(DIMS.map(d=>[d[0],cur(d[0])]));
+const goals=()=>Object.fromEntries(DIMS.map(d=>[d[0],goal(d[0])]));
+
+/* ════════ Vistas ════════ */
+const fld=(p,label,o={})=>{const v=getp(S,p)||'';
+  return `<label class="f"><span class="l">${esc(label)}</span>${o.area===false?`<input type="text" data-p="${p}" value="${esc(v)}" ${o.ph?`placeholder="${esc(o.ph)}"`:''}>`:`<textarea data-p="${p}" ${o.ph?`placeholder="${esc(o.ph)}"`:''}>${esc(v)}</textarea>`}${o.hint?`<span class="hint">${esc(o.hint)}</span>`:''}</label>`};
+const navBtns=i=>`<div class="nav2">${i>0?`<button class="btn ghost" data-act="go" data-i="${i-1}">← ${esc(STEPS[i-1][1])}</button>`:'<span></span>'}${i<STEPS.length-1?`<button class="btn primary" data-act="go" data-i="${i+1}">${esc(STEPS[i+1][1])} →</button>`:''}</div>`;
+
+function vImp(){
+  const hasLv=Object.keys(S.niveles).length>0;
+  return `<h2>Datos de partida</h2>
+  <p class="sub">Carga lo que ya hiciste. Nada se pide dos veces: el plan hereda los niveles, la descripción y el problema.</p>
+  <div class="cols">
+    <div>
+      <div class="card">
+        <span class="chip ${S.origen.madurez?'ok':''}">${S.origen.madurez?'Cargado':'Pendiente'}</span>
+        <h3 style="margin-top:8px">1. Paquete de la Ruta de Madurez</h3>
+        <p>Es el archivo <b>.json</b> que descargaste al terminar tu diagnóstico.</p>
+        <label class="btn primary">Elegir archivo de Madurez<input type="file" id="imp-mad" accept=".json,application/json" hidden></label>
+        <p class="muted" id="msg-mad" aria-live="polite" style="margin-top:10px">${esc(S.origen.madurez||'')}</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <span class="chip ${S.valor.modo==='importada'?'ok':''}">${S.valor.modo==='importada'?'Cargado':'Opcional'}</span>
+        <h3 style="margin-top:8px">2. Valoración (opcional)</h3>
+        <p>La valoración no es obligatoria para planear. Si la tienes, se usa como referencia de negociación.</p>
+        <div class="seg" role="group" aria-label="Cómo incluir la valoración">
+          ${[['ninguna','Sin valoración por ahora'],['importada','Cargar de Ruta de Valor'],['manual','Escribir valores']].map(m=>`<button class="${S.valor.modo===m[0]?'on':''}" data-act="vmodo" data-m="${m[0]}">${m[1]}</button>`).join('')}
+        </div>
+        <div id="valor-panel">${vValor()}</div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <h3>3. Ficha del desarrollo</h3>
+        ${fld('ficha.nombre','Nombre del desarrollo',{area:false})}
+        ${fld('ficha.creadores','Creadores',{area:false,hint:'Separa los nombres con punto y coma.'})}
+        <div class="grid g2">${fld('ficha.facultad','Facultad o programa',{area:false})}${fld('ficha.grupo','Grupo o semillero',{area:false})}</div>
+        ${fld('ficha.descripcion','¿Qué es?',{hint:'Dos o tres frases.'})}
+        ${fld('ficha.problema','¿Qué problema resuelve?')}
+      </div>
+      ${hasLv?'':`<div class="notice"><b>No hay niveles cargados.</b> Sin el paquete de Madurez puedes indicarlos a mano en el paso 2. Las actividades sugeridas se basarán en la escala completa, no en tus respuestas.</div>`}
+    </div>
+  </div>
+  ${navBtns(0)}`;
+}
+function vValor(){
+  const v=S.valor;
+  if(v.modo==='ninguna')return `<div class="notice" style="margin-bottom:0">Sin valoración: la negociación irá sin referencia de precio. Puedes agregarla cuando la tengas.</div>`;
+  if(v.modo==='importada'){
+    return `<p style="margin-top:12px">Selecciona el archivo que descargaste desde la Ruta de Valor.</p>
+    <label class="btn small">Elegir archivo de Valor<input type="file" id="imp-val" accept=".json,application/json" hidden></label>
+    <p class="muted" id="msg-val" aria-live="polite" style="margin-top:8px">${esc(S.origen.valor||'')}</p>${valSummary()}`;
+  }
+  const inp=(f,l)=>`<label class="f"><span class="l">${l}</span><input type="text" inputmode="decimal" data-val="${f}" value="${v[f]==null?'':v[f]}" placeholder="Millones de COP"></label>`;
+  return `<div class="grid g3" style="margin-top:12px">${inp('costo','Costo (piso)')}${inp('ref','Referencia')}${inp('max','Techo')}</div>${valSummary()}`;
+}
+function valSummary(){
+  const v=S.valor;if(!(v.max>0||v.ref>0||v.costo>0))return '';
+  const lo=Math.min(...[v.costo,v.min,v.ref].filter(x=>x>0)),hi=Math.max(v.max||0,v.ref||0,v.costo||0),sc=hi*1.1||1;
+  const pos=x=>(Math.max(0,Math.min(100,x/sc*100))).toFixed(1);
+  return `<div class="range-bar" aria-hidden="true"><div class="fill" style="left:${pos(lo)}%;width:${(pos(hi)-pos(lo)).toFixed(1)}%"></div>${v.costo>0?`<div class="fl" style="left:${pos(v.costo)}%"></div>`:''}${v.ref>0?`<div class="ref" style="left:${pos(v.ref)}%"></div>`:''}</div>
+  <p class="muted" style="margin:6px 0 0">Costo (piso): <b>${fmtM(v.costo)}</b> · Referencia: <b>${fmtM(v.ref)}</b> · Techo: <b>${fmtM(hi)}</b>. Estimación orientativa, no avalúo.</p>`;
+}
+function vPlan(){
+  const noLv=!Object.keys(S.niveles).length;
+  return `<h2>Plan de maduración</h2>
+  <p class="sub">Dos preguntas: ¿en qué nivel estás hoy? ¿Hasta dónde debe llegar para poder transferirse? La distancia entre las dos es tu plan.</p>
+  ${noLv?`<div class="notice">Indica tu nivel de hoy con los controles. Si cargas el paquete de Madurez en el paso 1, se llenan solos.</div>`:''}
+  <div class="cols r" style="margin-top:14px">
+    <div class="sticky">
+      <div class="radar-box" id="radar">${radarSVG(vals(),goals())}</div>
+      <div class="legend"><span><i></i>Hoy</span><span><i class="g"></i>Meta para transferencia</span></div>
+      <div class="cta-row" style="justify-content:center;margin-top:10px">
+        <button class="btn small" data-act="metaplus" data-n="1">Meta: +1 nivel</button>
+        <button class="btn small" data-act="metaplus" data-n="2">Meta: +2 niveles</button>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <div class="lvhead"><span>Dimensión</span><span>Hoy</span><span>Meta</span></div>
+        ${DIMS.map((d,i)=>`<div class="lvrow"><div class="nm"><b style="color:var(--d${i})">${d[0]} · ${esc(d[1])}</b><small>${esc(d[2])}</small></div>
+          <label class="ctl"><span class="sr">Nivel de hoy en ${d[0]}</span><output id="o-cur-${d[0]}">${cur(d[0])}</output><input type="range" min="0" max="9" step="1" value="${cur(d[0])}" data-lv="cur" data-k="${d[0]}" ${S.origen.madurez?'':''}></label>
+          <label class="ctl"><span class="sr">Meta en ${d[0]}</span><output id="o-goal-${d[0]}">${goal(d[0])}</output><input type="range" min="0" max="9" step="1" value="${goal(d[0])}" data-lv="goal" data-k="${d[0]}"></label></div>`).join('')}
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:40px">Qué falta para llegar a la meta</h2>
+  <p class="sub">Para cada dimensión se listan los criterios de los niveles que quedan entre hoy y la meta. Cada uno puede volverse una actividad de tu hoja de ruta.</p>
+  <div id="gaps">${vGaps()}</div>
+
+  <h2 style="margin-top:40px">El plan, por escrito</h2>
+  <div class="explain"><b>Para qué sirve:</b> es el plan de maduración (A3) del programa. Resume qué se va a hacer, con qué y con quién.</div>
+  <div class="cols">${PLAN_F.map(f=>fld('plan.'+f[0],f[1],{hint:f[2]})).join('')}</div>
+  ${navBtns(1)}`;
+}
+function vGaps(){
+  const act=DIMS.filter(d=>goal(d[0])>cur(d[0]));
+  if(!act.length)return `<div class="card"><p style="margin:0">Todavía no hay brecha: la meta es igual al nivel de hoy en todas las dimensiones. Sube la meta con los controles de arriba.</p></div>`;
+  return act.map(d=>{const k=d[0],i=dimIdx(k),m=missing(k),dm=bankDim(k);
+    const body=[];for(let n=cur(k)+1;n<=goal(k);n++){const L=dm&&dm.levels.find(x=>x.n===n);if(!L)continue;
+      body.push(`<div style="margin-top:10px"><b style="font:700 .9rem var(--display)">Nivel ${n} · ${esc(L.title)}</b>${L.q.map((q,qi)=>{const st=critStatus(k,n,qi);const added=S.ruta.items.some(t=>t.src===`${k}-${n}-${qi}`);
+        return `<div class="crit ${st==='si'?'si':''}"><span class="mk">${st==='si'?'✓':st==='no'?'✕':'·'}</span><span class="t">${esc(q)}</span>${st==='si'?'':`<button class="btn small ${added?'ghost':''}" data-act="addcrit" data-k="${k}" data-n="${n}" data-i="${qi}" ${added?'disabled':''}>${added?'En la hoja de ruta':'+ A la hoja de ruta'}</button>`}</div>`}).join('')}</div>`)}
+    return `<details class="gap-card" ${UI.gapOpen[k]?'open':''} data-gap="${k}"><summary><span class="dot" style="background:var(--d${i})"></span>${k} · ${esc(d[1])}<span class="arrow">${cur(k)} → ${goal(k)} · ${m.length} por cumplir</span></summary><div class="gap-body">${body.join('')}${m.length?`<div style="margin-top:12px"><button class="btn small" data-act="addall" data-k="${k}">Añadir los ${m.length} criterios a la hoja de ruta</button></div>`:''}</div></details>`}).join('');
+}
+function vEq(){
+  const miembros=S.equipo.miembros;
+  return `<h2>Equipo</h2>
+  <p class="sub">Un plan lo ejecutan personas. Este canvas deja claro quién hace qué y qué falta.</p>
+  <div class="explain"><b>Consejo:</b> empieza por «Personas y roles» y «Metas comunes». Lo demás sale más fácil.</div>
+  <div class="note-grid">
+    <div class="note w2"><h3>Personas y roles</h3><p class="g">Quién está en el equipo y qué hace cada uno.</p>
+      ${miembros.map((m,i)=>`<div class="member"><input type="text" aria-label="Nombre" placeholder="Nombre" data-mem="${i}" data-f="n" value="${esc(m.n)}"><input type="text" aria-label="Rol" placeholder="Rol (p. ej. investigador principal)" data-mem="${i}" data-f="r" value="${esc(m.r)}"><button class="x" data-act="delmem" data-i="${i}" aria-label="Quitar integrante">✕</button></div>`).join('')}
+      <button class="btn small" data-act="addmem" style="align-self:flex-start">+ Integrante</button></div>
+    ${EQ_F.map(f=>`<div class="note"><h3>${esc(f[1])}</h3><p class="g">${esc(f[2])}</p><textarea data-p="equipo.${f[0]}" aria-label="${esc(f[1])}">${esc(S.equipo[f[0]]||'')}</textarea></div>`).join('')}
+  </div>
+  ${navBtns(2)}`;
+}
+function vRuta(){
+  const nq=S.ruta.nq,items=S.ruta.items;
+  const cols=[];for(let q=1;q<=nq;q++)cols.push(q);
+  return `<h2>Hoja de ruta</h2>
+  <p class="sub">Arrastra las tarjetas entre trimestres o usa las flechas. Toca una tarjeta para completar recursos, responsables, aliados, resultados y evidencias.</p>
+  <div class="cols" style="margin-top:10px">
+    ${fld('ruta.objetivo','Objetivo de la hoja de ruta',{hint:'Una frase: qué debe estar logrado al final.'})}
+    <div class="grid g2">
+      <label class="f"><span class="l">Año de inicio</span><input type="number" min="2024" max="2040" data-p="ruta.inicio" data-num="1" value="${S.ruta.inicio}"></label>
+      <div class="f"><span class="l">Trimestres</span><div class="seg"><button data-act="nq" data-d="-1" aria-label="Quitar un trimestre">−</button><button class="on" style="pointer-events:none">${nq}</button><button data-act="nq" data-d="1" aria-label="Agregar un trimestre">+</button></div></div>
+    </div>
+  </div>
+  <div class="cta-row" style="margin-top:0">
+    <button class="btn primary small" data-act="propose">Proponer actividades desde mi brecha</button>
+    <button class="btn small" data-act="csv">Descargar tabla (CSV)</button>
+  </div>
+  <div class="board" id="board">
+    ${cols.map(q=>{const ts=items.filter(t=>t.q===q);
+      return `<div class="col" data-col="${q}"><h3>${lblQ(q)}<small>${ts.length} act.</small></h3>
+      ${ts.map(t=>taskCard(t)).join('')}
+      <button class="addc" data-act="addcard" data-q="${q}">+ Actividad</button></div>`}).join('')}
+  </div>
+  <p class="muted">Sin trimestre asignado se agrupa en el primero. Al quitar un trimestre, sus tarjetas pasan al último.</p>
+  ${navBtns(3)}`;
+}
+function taskCard(t){
+  const i=t.dim?dimIdx(t.dim):-1,open=UI.open===t.id;
+  const meta=[t.resp&&('Resp.: '+t.resp),t.ali&&('Aliado: '+t.ali)].filter(Boolean).join(' · ');
+  return `<div class="task" draggable="true" data-task="${t.id}" style="--dc:${i>=0?`var(--d${i})`:'var(--accent)'}">
+    <div class="top2"><span class="at" data-act="open" data-id="${t.id}" role="button" tabindex="0">${esc(t.act||'(sin descripción)')}</span><button class="x" data-act="deltask" data-id="${t.id}" aria-label="Eliminar actividad">✕</button></div>
+    ${t.dim?`<div class="meta"><span class="chip">${t.dim}${t.n?' '+t.n:''}</span></div>`:''}
+    ${meta&&!open?`<div class="meta">${esc(meta)}</div>`:''}
+    <div class="mv"><button class="btn small ghost" data-act="mvq" data-id="${t.id}" data-d="-1" aria-label="Mover al trimestre anterior">←</button><button class="btn small ghost" data-act="mvq" data-id="${t.id}" data-d="1" aria-label="Mover al trimestre siguiente">→</button></div>
+    ${open?`<div class="more">
+      <textarea data-ti="${t.id}" data-f="act" aria-label="Actividad" placeholder="Actividad">${esc(t.act||'')}</textarea>
+      <input type="text" data-ti="${t.id}" data-f="rec" placeholder="Recursos necesarios" value="${esc(t.rec||'')}">
+      <input type="text" data-ti="${t.id}" data-f="resp" placeholder="Responsable(s)" value="${esc(t.resp||'')}">
+      <input type="text" data-ti="${t.id}" data-f="ali" placeholder="Aliado(s)" value="${esc(t.ali||'')}">
+      <input type="text" data-ti="${t.id}" data-f="res" placeholder="Resultado(s)" value="${esc(t.res||'')}">
+      <input type="text" data-ti="${t.id}" data-f="evi" placeholder="Evidencia(s)" value="${esc(t.evi||'')}">
+    </div>`:''}
+  </div>`;
+}
+function suggest(id){
+  const L=S.lienzo,un=a=>[...new Set(a.filter(filled).map(x=>x.trim()))];
+  const v=S.valor;
+  switch(id){
+    case 'alist':{const l=DIMS.filter(d=>goal(d[0])>cur(d[0])||cur(d[0])>0).map(d=>`${d[0]}: nivel ${cur(d[0])} hoy → meta ${goal(d[0])}`);return l.length?l.join('\n'):''}
+    case 'prop':return un([S.ficha.problema&&('Problema que resuelve: '+S.ficha.problema),S.ficha.descripcion&&('Solución: '+S.ficha.descripcion)]).join('\n');
+    case 'dol':return S.ficha.problema||'';
+    case 'ale':return S.plan.ben||'';
+    case 'ing':return (v.ref>0||v.max>0)?`Referencia de valor: ${fmtM(v.ref)}. Costo acumulado (piso de negociación): ${fmtM(v.costo)}. Techo: ${fmtM(Math.max(v.max||0,v.ref||0))}. Estimación orientativa, no avalúo.`:'';
+    case 'rec':return un(S.ruta.items.map(t=>t.rec)).join('\n')||S.plan.rec||'';
+    case 'act':return un(S.ruta.items.map(t=>t.act)).slice(0,6).map(x=>'• '+x).join('\n');
+    case 'ali':return un(S.ruta.items.map(t=>t.ali)).join('\n');
+    case 'prot':return S.plan.pi||'';
+    case 'ident':return S.ficha.nombre?('Resultado a declarar: '+S.ficha.nombre+(S.ficha.creadores?'. Autores: '+S.ficha.creadores:'')):'';
+    case 'imp':return S.plan.ben||'';
+  }
+  return '';
+}
+function vLien(){
+  const filledN=b=>LIEN.filter(c=>c.b===b&&filled(S.lienzo[c.id])).length;
+  return `<h2>Lienzo de la transferencia y el modelo de negocio</h2>
+  <p class="sub">Dieciocho casillas, tres bloques. No hay que llenarlas todas de una vez: cada una trae su pregunta guía. Donde ya tienes datos, el botón «Insertar sugerencia» los trae.</p>
+  ${LIEN.length?BLOCKS.map((B,b)=>`<div class="blk" style="--bgb:var(--b${b+1})"><h3>${b+1}. ${B[0]}<span class="meter" aria-hidden="true"><i id="mt-${b}" style="width:${filledN(b)/6*100}%"></i></span><span class="muted" id="mc-${b}">${filledN(b)}/6</span></h3><p class="muted" style="margin-top:-6px">${B[1]}</p>
+    <div class="cells">${LIEN.filter(c=>c.b===b).map(c=>{const sg=suggest(c.id);
+      return `<div class="cell ${filled(S.lienzo[c.id])?'full':''}" data-cell="${c.id}"><h4>${c.t}<span class="tick" aria-hidden="true">✓</span></h4><p class="qs">${esc(c.q)}</p>
+      <textarea data-p="lienzo.${c.id}" aria-label="${esc(c.t)}">${esc(S.lienzo[c.id]||'')}</textarea>
+      ${sg?`<button class="btn small ghost sg" data-act="sug" data-id="${c.id}">Insertar sugerencia</button>`:''}</div>`}).join('')}</div></div>`).join(''):''}
+  ${navBtns(4)}`;
+}
+function vPitch(){
+  const p=progress();
+  return `<h2>Pitch y ficha</h2>
+  <p class="sub">El pitch cuenta tu proyecto en pocos minutos, con el orden del canvas de pitch. Genera un borrador con lo que ya llenaste y ajústalo con tus palabras.</p>
+  <div class="cta-row" style="margin-top:6px">
+    <button class="btn primary" data-act="genpitch">Generar borrador con mis datos</button>
+    <button class="btn" data-act="present">▶ Presentar a pantalla completa</button>
+    <button class="btn" data-act="pdf">Descargar ficha en PDF</button>
+  </div>
+  <div class="pitch-grid">
+    ${PITCH.map((f,i)=>`<div class="pf ${i<2||i===10?'wide':''}"><span class="num">${String(i+1).padStart(2,'0')}</span><h3>${esc(f[1])}</h3><p class="g">${esc(f[2])}</p><textarea data-p="pitch.${f[0]}" aria-label="${esc(f[1])}">${esc(S.pitch[f[0]]||'')}</textarea></div>`).join('')}
+  </div>
+
+  <h2 style="margin-top:40px">Ficha del plan</h2>
+  <p class="sub">Resumen de una o dos páginas con todo lo anterior. Se imprime o se guarda como PDF desde el botón de arriba.</p>
+  ${S.valor.modo==='ninguna'||!(S.valor.ref>0||S.valor.max>0||S.valor.costo>0)?`<div class="notice">Esta ficha va <b>sin valoración económica</b>. Es opcional; si luego la obtienes, cárgala en el paso 1.</div>`:''}
+  <div class="sheet" id="sheet-prev">${sheetHTML()}</div>
+  <p class="muted" style="margin-top:8px">Avance total del plan: ${Math.round(p.all*100)} %.</p>
+  ${navBtns(5)}`;
+}
+function sheetHTML(){
+  const f=S.ficha,v=S.valor,items=[...S.ruta.items].sort((a,b)=>a.q-b.q);
+  const has=v.ref>0||v.max>0||v.costo>0;
+  const brecha=DIMS.map(d=>`<tr><td><b>${d[0]}</b> ${esc(d[1])}</td><td>${cur(d[0])}</td><td>${goal(d[0])}</td><td>${Math.max(0,goal(d[0])-cur(d[0]))}</td></tr>`).join('');
+  return `<h1>${esc(f.nombre||'Plan de transferencia')}</h1>
+  <p class="fl" style="margin:0 0 6px">${esc(CONFIG.institucion)} · ${esc(CONFIG.oficina)} · ${today()}</p>
+  <div class="kv"><div><b>Creadores:</b> ${esc(f.creadores||'—')}</div><div><b>Facultad / grupo:</b> ${esc([f.facultad,f.grupo].filter(Boolean).join(' · ')||'—')}</div></div>
+  ${f.descripcion?`<p style="margin-top:8px"><b>Qué es:</b> ${esc(f.descripcion)}</p>`:''}
+  ${f.problema?`<p><b>Problema que resuelve:</b> ${esc(f.problema)}</p>`:''}
+  <h2>1. Madurez: hoy y meta</h2>
+  <div class="cols" style="grid-template-columns:1fr 1.2fr;gap:14px;align-items:center">
+    <div class="rad">${radarSVG(vals(),goals(),300)}</div>
+    <table><thead><tr><th>Dimensión</th><th>Hoy</th><th>Meta</th><th>Brecha</th></tr></thead><tbody>${brecha}</tbody></table>
+  </div>
+  <h2>2. Valoración económica</h2>
+  ${has?`<div class="kv"><div><b>Costo (piso):</b> ${fmtM(v.costo)}</div><div><b>Referencia:</b> ${fmtM(v.ref)}</div><div><b>Techo:</b> ${fmtM(Math.max(v.max||0,v.ref||0))}</div><div><b>Origen:</b> ${esc(S.origen.valor||'Ingresado a mano')}</div></div><p class="fl">Estimación orientativa para gestión y negociación; no constituye avalúo.</p>`:`<p>Sin valoración económica registrada. Es opcional según el Acuerdo 041 de 2026.</p>`}
+  <h2>3. Plan de maduración</h2>
+  <div class="three">${PLAN_F.filter(x=>filled(S.plan[x[0]])).map(x=>`<div class="box"><b>${esc(x[1])}</b><span>${esc(S.plan[x[0]])}</span></div>`).join('')||'<div class="box"><span>Sin completar.</span></div>'}</div>
+  <h2>4. Equipo</h2>
+  ${S.equipo.miembros.some(m=>filled(m.n))?`<p>${S.equipo.miembros.filter(m=>filled(m.n)).map(m=>`<b>${esc(m.n)}</b>${m.r?' ('+esc(m.r)+')':''}`).join(' · ')}</p>`:''}
+  <div class="three">${EQ_F.filter(x=>filled(S.equipo[x[0]])).map(x=>`<div class="box"><b>${esc(x[1])}</b><span>${esc(S.equipo[x[0]])}</span></div>`).join('')}</div>
+  <h2>5. Hoja de ruta${S.ruta.objetivo?': '+esc(S.ruta.objetivo):''}</h2>
+  ${items.length?`<table><thead><tr><th>Trim.</th><th>Actividad</th><th>Recursos</th><th>Responsable</th><th>Aliado</th><th>Resultado</th><th>Evidencia</th></tr></thead><tbody>${items.map(t=>`<tr><td>${lblQ(Math.min(t.q,S.ruta.nq))}</td><td>${esc(t.act)}</td><td>${esc(t.rec||'')}</td><td>${esc(t.resp||'')}</td><td>${esc(t.ali||'')}</td><td>${esc(t.res||'')}</td><td>${esc(t.evi||'')}</td></tr>`).join('')}</tbody></table>`:'<p>Sin actividades registradas.</p>'}
+  <h2>6. Lienzo de la transferencia y el modelo de negocio</h2>
+  ${BLOCKS.map((B,b)=>`<p style="margin:6px 0 4px"><b>${B[0]}</b></p><div class="three">${LIEN.filter(c=>c.b===b).map(c=>`<div class="box"><b>${esc(c.t)}</b><span>${esc(S.lienzo[c.id]||'—')}</span></div>`).join('')}</div>`).join('')}
+  ${filled(S.pitch.frase)||filled(S.pitch.cambio)?`<h2>7. Pitch en una frase</h2><p>${esc(S.pitch.frase||S.pitch.cambio)}</p>`:''}
+  <p class="fl">Generado con Plan de Transferencia · ${esc(CONFIG.institucion)}. Los resultados dependen de la información declarada por el equipo.</p>`;
+}
+
+/* ════════ Render y navegación ════════ */
+const VIEWS={imp:vImp,plan:vPlan,eq:vEq,ruta:vRuta,lien:vLien,pitch:vPitch};
+function renderSteps(){
+  const p=progress();
+  $('#steps').innerHTML=STEPS.map((s,i)=>{const pc=Math.round(p[s[0]]*100);
+    return `<button class="pill ${S.step===i?'on':''} ${pc>=100?'done':''}" data-act="go" data-i="${i}" ${S.step===i?'aria-current="step"':''}><span class="ring" style="--p:${pc}"><b>${pc>=100?'✓':i+1}</b></span>${esc(s[1])}</button>`}).join('');
+  $('#gbar').style.width=Math.round(p.all*100)+'%';
+}
+function render(keepScroll){
+  const k=STEPS[S.step][0];
+  $('#main').innerHTML=VIEWS[k]();
+  renderSteps();
+  if(!keepScroll)window.scrollTo({top:0});
+}
+function showView(v){
+  $('#v-home').hidden=v!=='home';$('#v-app').hidden=v!=='app';
+  $('#nav-home').classList.toggle('on',v==='home');$('#nav-app').classList.toggle('on',v==='app');
+  if(v==='app')render();
+  else window.scrollTo({top:0});
+}
+function updRadar(){
+  const r=$('#radar');if(r)r.innerHTML=radarSVG(vals(),goals());
+  const g=$('#gaps');if(g)g.innerHTML=vGaps();
+  renderSteps();
+}
+function updCells(id){
+  const c=LIEN.find(x=>x.id===id);if(!c)return;
+  const cell=$(`[data-cell="${id}"]`);if(cell)cell.classList.toggle('full',filled(S.lienzo[id]));
+  const b=c.b,n=LIEN.filter(x=>x.b===b&&filled(S.lienzo[x.id])).length;
+  const mt=$('#mt-'+b),mc=$('#mc-'+b);if(mt)mt.style.width=(n/6*100)+'%';if(mc)mc.textContent=n+'/6';
+}
+function renderHome(){
+  $('#etapas').innerHTML=ETAPAS.map((e,i)=>`<div class="etapa ${e[3]==='here'?'here':''}"><div class="n">${i+1}</div><h3>${esc(e[0])}</h3><small>${esc(e[1])}</small><small style="margin-top:6px">${esc(e[2])}</small><span class="tag">${e[3]==='here'?'Aquí':e[3]==='done'?'Ya la hiciste':'Se toca aquí y allá'}</span></div>`).join('');
+  $('#how').innerHTML=HOW.map((h,i)=>`<div class="card"><div class="step-n">${String(i+1).padStart(2,'0')}</div><h3>${esc(h[0])}</h3><p style="margin:0">${esc(h[1])}</p></div>`).join('');
+}
+
+/* ════════ Pitch: borrador y presentación ════════ */
+function genPitch(){
+  const L=S.lienzo,P=S.pitch,f=S.ficha;let n=0;
+  const put=(k,v)=>{if(!filled(P[k])&&filled(v)){P[k]=v.trim();n++}};
+  put('sit',L.dol||f.problema);
+  put('tec',S.plan.desc||f.descripcion);
+  put('ben',S.plan.ben||L.ale);
+  put('mod',[L.prop,L.ing].filter(filled).join('\n\n'));
+  put('tes',[L.neg,L.con].filter(filled).join('\n\n')||S.plan.prop);
+  const dd=DIMS.filter(d=>goal(d[0])>cur(d[0]));
+  put('plan',dd.length?'Hoy: '+DIMS.filter(d=>cur(d[0])>0).map(d=>`${d[0]} ${cur(d[0])}`).join(', ')+'. Meta: '+dd.map(d=>`${d[0]} ${goal(d[0])}`).join(', ')+'.'+(S.plan.prop?'\n'+S.plan.prop:''):S.plan.prop);
+  const it=[...S.ruta.items].sort((a,b)=>a.q-b.q).slice(0,6);
+  put('hr',it.map(t=>`${lblQ(t.q)}: ${t.act}`).join('\n'));
+  put('eq',S.equipo.miembros.filter(m=>filled(m.n)).map(m=>m.n+(m.r?' ('+m.r+')':'')).join(', '));
+  if(!filled(P.frase)&&filled(f.nombre)&&filled(f.problema)){P.frase=`${f.nombre}: una respuesta a ${f.problema.replace(/[.\s]+$/,'').replace(/^./,c=>c.toLowerCase())}.`;n++}
+  return n;
+}
+let PS={i:0,slides:[]};
+function openPresent(){
+  const f=S.ficha;
+  PS.slides=[{k:'Plan de transferencia',t:f.nombre||'Mi proyecto',s:[f.facultad,f.grupo].filter(Boolean).join(' · ')||CONFIG.institucion,big:true}]
+    .concat(PITCH.map((x,i)=>({k:`${i+1}. ${x[1]}`,t:S.pitch[x[0]]||'',s:'',long:(S.pitch[x[0]]||'').length>160})));
+  PS.i=0;$('#present').hidden=false;document.body.style.overflow='hidden';drawPresent();
+  if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});
+  $('#present button[data-act="pnext"]')?.focus();
+}
+function drawPresent(){
+  const s=PS.slides[PS.i],n=PS.slides.length;
+  $('#present').innerHTML=`<div class="ptl"><span>${esc(CONFIG.institucion)}</span><span>${PS.i+1} / ${n}</span><button data-act="pclose">Salir (Esc)</button></div>
+  <div class="pbar" aria-hidden="true"><i style="width:${(PS.i+1)/n*100}%"></i></div>
+  <div class="pbody"><div class="k">${esc(s.k)}</div><div class="t ${s.long?'small':''} ${s.t?'':'empty'}">${esc(s.t||'(Sin completar)')}</div>${s.s?`<p style="color:rgba(255,255,255,.8);margin-top:18px;font-size:1.1rem">${esc(s.s)}</p>`:''}</div>
+  <div class="pnav"><button data-act="pprev" ${PS.i===0?'disabled':''}>← Anterior</button><button data-act="pnext" ${PS.i===n-1?'disabled':''}>Siguiente →</button></div>`;
+}
+function closePresent(){$('#present').hidden=true;document.body.style.overflow='';if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{})}
+
+/* ════════ Hoja de ruta: acciones ════════ */
+function addTask(o){
+  if(o.src&&S.ruta.items.some(t=>t.src===o.src))return false;
+  S.ruta.items.push(Object.assign({id:uid(),q:1,act:''},o));return true;
+}
+function propose(){
+  const cand=[];
+  DIMS.forEach(d=>missing(d[0]).forEach(m=>cand.push(m)));
+  cand.sort((a,b)=>a.n-b.n||dimIdx(a.k)-dimIdx(b.k));
+  const fresh=cand.filter(c=>!S.ruta.items.some(t=>t.src===`${c.k}-${c.n}-${c.i}`)).slice(0,16);
+  if(!fresh.length)return {n:0,total:cand.length};
+  fresh.forEach((c,idx)=>addTask({src:`${c.k}-${c.n}-${c.i}`,dim:c.k,n:c.n,act:qToAct(c.k,c.n,c.q),q:1+Math.floor(idx*S.ruta.nq/fresh.length)}));
+  return {n:fresh.length,total:cand.length};
+}
+function toCSV(){
+  const rows=[['Trimestre','Actividad','Recursos necesarios','Responsable(s)','Aliado(s)','Resultado(s)','Evidencia(s)']];
+  [...S.ruta.items].sort((a,b)=>a.q-b.q).forEach(t=>rows.push([lblQ(Math.min(t.q,S.ruta.nq)),t.act,t.rec,t.resp,t.ali,t.res,t.evi].map(x=>x||'')));
+  return '﻿'+rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(',')).join('\r\n');
+}
+
+/* ════════ Eventos ════════ */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-act]');if(!t)return;
+  const a=t.dataset.act;
+  switch(a){
+    case 'home':showView('home');break;
+    case 'ruta':showView('home');setTimeout(()=>$('#ruta').scrollIntoView({behavior:'smooth'}),30);break;
+    case 'start':showView('app');break;
+    case 'theme':{const th=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',th);lsSet('plan-unimayor:tema',th);t.textContent=th==='dark'?'☀ Claro':'☾ Oscuro';break}
+    case 'go':S.step=+t.dataset.i;save();render();break;
+    case 'exp':download('Plan_'+slug(S.ficha.nombre)+'_'+today()+'.json',JSON.stringify({app:'plan-unimayor',version:1,exportedAt:new Date().toISOString(),institucion:CONFIG.institucion,state:S}));break;
+    case 'reset':if(confirm('Se borrará todo el avance guardado en este navegador. ¿Empezar de cero?')){S=blank();lsSet(KEY,JSON.stringify(S));render();toast('Plan reiniciado')}break;
+    case 'vmodo':S.valor.modo=t.dataset.m;save();render(true);break;
+    case 'metaplus':{DIMS.forEach(d=>{S.metas[d[0]]=Math.min(9,cur(d[0])+ +t.dataset.n)});save();render(true);break}
+    case 'addcrit':{const k=t.dataset.k,n=+t.dataset.n,i=+t.dataset.i,d=bankDim(k),q=d&&d.levels.find(x=>x.n===n).q[i];
+      addTask({src:`${k}-${n}-${i}`,dim:k,n,act:qToAct(k,n,q),q:1});save();UI.gapOpen[k]=true;updRadar();toast('Añadida al primer trimestre de la hoja de ruta');break}
+    case 'addall':{const k=t.dataset.k;let c=0;missing(k).forEach(m=>{if(addTask({src:`${m.k}-${m.n}-${m.i}`,dim:m.k,n:m.n,act:qToAct(m.k,m.n,m.q),q:1}))c++});
+      S.ruta.items.filter(x=>x.dim===k&&x.q===1).forEach((x,i,arr)=>{x.q=1+Math.floor(i*S.ruta.nq/arr.length)});
+      save();UI.gapOpen[k]=true;updRadar();toast(c+' actividades repartidas en la hoja de ruta');break}
+    case 'propose':{const r=propose();save();render(true);toast(r.n?`Se propusieron ${r.n} actividades${r.total>r.n?' (de '+r.total+' criterios; el resto sigue en el paso 2)':''}`:'No hay criterios nuevos por proponer. Revisa la meta en el paso 2.');break}
+    case 'nq':{const d=+t.dataset.d;S.ruta.nq=Math.max(1,Math.min(8,S.ruta.nq+d));S.ruta.items.forEach(x=>{if(x.q>S.ruta.nq)x.q=S.ruta.nq});save();render(true);break}
+    case 'addcard':{const it=addTask({q:+t.dataset.q,act:''});UI.open=S.ruta.items[S.ruta.items.length-1].id;save();render(true);break}
+    case 'deltask':S.ruta.items=S.ruta.items.filter(x=>x.id!==t.dataset.id);save();render(true);break;
+    case 'open':{UI.open=UI.open===t.dataset.id?null:t.dataset.id;render(true);break}
+    case 'mvq':{const x=S.ruta.items.find(y=>y.id===t.dataset.id);if(x){x.q=Math.max(1,Math.min(S.ruta.nq,x.q+ +t.dataset.d));save();render(true)}break}
+    case 'csv':download('Hoja_de_ruta_'+slug(S.ficha.nombre)+'_'+today()+'.csv',toCSV(),'text/csv;charset=utf-8');break;
+    case 'addmem':S.equipo.miembros.push({n:'',r:''});save();render(true);break;
+    case 'delmem':{S.equipo.miembros.splice(+t.dataset.i,1);if(!S.equipo.miembros.length)S.equipo.miembros.push({n:'',r:''});save();render(true);break}
+    case 'sug':{const id=t.dataset.id,s=suggest(id);if(s){const cur0=S.lienzo[id]||'';S.lienzo[id]=cur0.trim()?cur0.trim()+'\n'+s:s;save();render(true);toast('Sugerencia insertada: edítala con tus palabras')}break}
+    case 'genpitch':{const n=genPitch();save();render(true);toast(n?`Borrador listo: ${n} apartados completados. Revisa y ajusta.`:'No hay datos nuevos para completar. Llena antes el plan, la hoja de ruta o el lienzo.');break}
+    case 'present':openPresent();break;
+    case 'pclose':closePresent();break;
+    case 'pprev':if(PS.i>0){PS.i--;drawPresent()}break;
+    case 'pnext':if(PS.i<PS.slides.length-1){PS.i++;drawPresent()}break;
+    case 'pdf':{$('#sheet').innerHTML=`<div class="sheet">${sheetHTML()}</div>`;window.print();break}
+  }
+});
+document.addEventListener('keydown',e=>{
+  if(!$('#present').hidden){
+    if(e.key==='Escape')closePresent();
+    else if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();if(PS.i<PS.slides.length-1){PS.i++;drawPresent()}}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){if(PS.i>0){PS.i--;drawPresent()}}
+    return;
+  }
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.task .at')){e.preventDefault();e.target.click()}
+});
+document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!$('#present').hidden)closePresent()});
+document.addEventListener('input',e=>{
+  const t=e.target;
+  if(t.dataset.p){
+    let v=t.value;if(t.dataset.num)v=Math.round(+v)||new Date().getFullYear()+1;
+    setp(S,t.dataset.p,v);save();
+    if(t.dataset.p.startsWith('lienzo.'))updCells(t.dataset.p.slice(7));
+    renderSteps();
+  }else if(t.dataset.lv){
+    const k=t.dataset.k,v=+t.value;
+    if(t.dataset.lv==='cur'){S.niveles[k]=v;if(S.metas[k]==null||S.metas[k]<v){S.metas[k]=v;const g=$('#o-goal-'+k);if(g)g.textContent=v;const gi=$(`[data-lv="goal"][data-k="${k}"]`);if(gi)gi.value=v}}
+    else S.metas[k]=Math.max(v,cur(k));
+    const oc=$('#o-cur-'+k),og=$('#o-goal-'+k);if(oc)oc.textContent=cur(k);if(og)og.textContent=goal(k);
+    if(t.dataset.lv==='goal'&&+t.value<cur(k))t.value=cur(k);
+    save();updRadar();
+  }else if(t.dataset.mem!==undefined){S.equipo.miembros[+t.dataset.mem][t.dataset.f]=t.value;save();renderSteps()}
+  else if(t.dataset.ti){const x=S.ruta.items.find(y=>y.id===t.dataset.ti);if(x){x[t.dataset.f]=t.value;save();renderSteps();if(t.dataset.f==='act'){const c=t.closest('.task');const at=c&&c.querySelector('.at');if(at)at.textContent=t.value||'(sin descripción)'}}}
+  else if(t.dataset.val){const n=parseFloat(String(t.value).replace(/\./g,'').replace(',','.'));S.valor[t.dataset.val]=isNaN(n)?null:n;
+    if(S.valor.max==null&&S.valor.ref)S.valor.max=S.valor.ref;save();const vp=$('#valor-panel .range-bar');const sm=$('#valor-panel');
+    // refresh only the summary, keep focus on the input
+    const tmp=document.createElement('div');tmp.innerHTML=valSummary();const old=sm.querySelectorAll('.range-bar,.muted');old.forEach(n=>n.remove());while(tmp.firstChild)sm.appendChild(tmp.firstChild)}
+});
+document.addEventListener('change',e=>{
+  const t=e.target;
+  if(t.id==='imp-mad'||t.id==='imp-val'||t.id==='imp-own'||t.id==='imp-own-home'){
+    const f=t.files&&t.files[0];if(!f)return;
+    readFile(f,txt=>{try{const m=importAny(txt);save();if(t.id==='imp-own-home')showView('app');else render(true);toast(m)}catch(err){toast('No se pudo cargar: '+err.message)}});
+    t.value='';
+  }
+});
+document.addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.gap)UI.gapOpen[d.dataset.gap]=d.open},true);
+/* drag & drop de tarjetas */
+let dragId=null;
+document.addEventListener('dragstart',e=>{const c=e.target.closest&&e.target.closest('.task');if(!c)return;dragId=c.dataset.task;c.classList.add('drag');e.dataTransfer.effectAllowed='move';try{e.dataTransfer.setData('text/plain',dragId)}catch(_){}});
+document.addEventListener('dragend',e=>{const c=e.target.closest&&e.target.closest('.task');if(c)c.classList.remove('drag');$$('.col.over').forEach(x=>x.classList.remove('over'));dragId=null});
+document.addEventListener('dragover',e=>{const c=e.target.closest&&e.target.closest('.col');if(!c||!dragId)return;e.preventDefault();$$('.col.over').forEach(x=>{if(x!==c)x.classList.remove('over')});c.classList.add('over')});
+document.addEventListener('drop',e=>{const c=e.target.closest&&e.target.closest('.col');if(!c||!dragId)return;e.preventDefault();
+  const x=S.ruta.items.find(y=>y.id===dragId);if(x){x.q=+c.dataset.col;save();render(true)}dragId=null});
+
+/* ════════ Arranque ════════ */
+renderHome();
+(function(){const th=document.documentElement.getAttribute('data-theme');const b=$('#nav-theme');if(b)b.textContent=th==='dark'?'☀ Claro':'☾ Oscuro'})();
+renderSteps();
+</script>
+</body>
+</html>
